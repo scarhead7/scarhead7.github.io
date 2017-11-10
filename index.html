@@ -8,21 +8,36 @@ my personal webpage
 <html lang = "en">
 <html>
   <head>
-    <title>Dallin</title>
-    <link rel="icon" href="/images/kali_icon.ico"/>
+    <style>
+      table, td {
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+
+      th {
+        text-align: left;
+        border-bottom: 3px solid black;
+        border-right: 1px solid black;
+      }
+    </style>
+    <title>Base</title>
+    <link rel="icon" href="./images/kali_icon.ico"/>
+    <meta name="author" content="Dallin Snell"/>
     <meta charset="utf-8"/>
   </head>
   <body>
-    <h1>My personal page</h1>
-    <label><strong>Username</strong></label>
-    <br/>
-    <input type="text" placeholder="Username" name="username" required>
-    <br/>
-    <label><strong>Password</strong></label>
-    <br/>
-    <input type="password" placeholder="Password" name="pass" required>
-    <br/>
-    <button type="submit">Login</button>
+    <p>This page is used as a history. Page first became active on: </p>
+    <table>
+      <tr>
+        <th>String</th>
+        <th>Date</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <button name="reset" id="reset" type="submit" onclick="location.reload()">Reset</button>
   </body>
 </html>
 
