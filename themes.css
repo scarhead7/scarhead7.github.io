@@ -5,5 +5,16 @@
 
 
 h1 {
-     color: red;
+  text-color: red;
+}
+
+table, td {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+th {
+  text-align: left;
+  border-bottom: 3px solid black;
+  border-right: 1px solid black;
 }
