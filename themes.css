@@ -4,10 +4,6 @@
 */
 
 
-body {
-  background-color:powderblue;
-}
-
 table, td {
   border-collapse: collapse;
   border: 1px solid black;
@@ -17,4 +13,23 @@ th {
   text-align: left;
   border-bottom: 3px solid black;
   border-right: 1px solid black;
+}
+
+ul.page_links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li.page_links {
+  float: left;
+  margin: 5px;
+}
+ul.page_links li+li:before {
+  padding: 8px;
+  content: "|\00a0\00a0";
+}
+
+#limit {
+  max-width: 600px;
 }
