@@ -6,13 +6,17 @@
 <!DOCTYPE html>
 <html lang = "en">
 <html>
-	<head>
+  <head>
     <title>Login</title>
     <link rel="icon" href="./images/kali_icon.ico"/>
     <meta charset="utf-8" />
     <meta name="author" content="Dallin Snell"/>
-	</head>
-	<body>
-    <input type="text"/>
-	</body>
+  </head>
+  <body>
+    <form action="./login.php" method="post">
+      Username <input name="user" type="text"/>
+      Password <input name="pass" type="password"/>
+      <input type="submit" value="Login"/>
+    </form>
+  </body>
 </html>
