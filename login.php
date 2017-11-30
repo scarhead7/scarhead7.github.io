@@ -4,5 +4,6 @@
 
 
 <?php
-  var_dump($_POST);
+  if($_POST["pass"] == "mypass")
+    echo "Success!";
 ?>
