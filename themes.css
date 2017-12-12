@@ -33,3 +33,8 @@ ul.page_links li+li:before {
 #limit {
   max-width: 600px;
 }
+
+.alert {
+  margin: auto; display: table;
+}
+
