@@ -4,6 +4,7 @@
 */
 
 
+/* tables */
 table, td {
   border-collapse: collapse;
   border: 1px solid black;
@@ -15,22 +16,67 @@ th {
   border-right: 1px solid black;
 }
 
+
+/* page links */
 ul.page_links {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
+
 li.page_links {
   float: left;
   margin: 5px;
 }
+
 ul.page_links li+li:before {
   padding: 8px;
   content: "|\00a0\00a0";
 }
 
+
+/* font awesome icons (for social media links) */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #3F729B;
+  color: white;
+}
+
+/* YouTube */
+.fa-youtube-play {
+  background: #DD4B39;
+  color: white;
+}
+
+
+/* I'm in the process of removing these entirely */
 #limit {
   max-width: 600px;
 }
+
 
