@@ -10,7 +10,7 @@
     <style>
     </style>
     <title>Excel</title>
-    <link rel="icon" href="./../images/cropped_favicon_BTH_icon.ico"/>
+    <link rel="icon" href="./../images/excel_icon.ico"/>
     <link rel="stylesheet" type="text/css" href="./../themes.css">
     <script src="./../scripts.js"></script>
     <meta name="author" content="Dallin Snell"/>
@@ -33,19 +33,63 @@
     </header>
 
     <div class="container-fluid">
+      <h1>Excel: Quick and Easy</h1>
+      <p>This page contains a lot of what I know about Microsoft Excel. There is so much to do with Excel that it's pretty difficult to put everything I know down, but I'll do my best. I have included screenshots and animated shots to help explain what I'm doing. There are links along the side that will jump you to specific spots if you know what you're looking for. If not, you can just start reading. Enjoy!</p>
       <div id="content" class="col-md-6 col-lg-9">
-        <h1>Excel: Quick and Easy</h1>
-        <p>This page contains a lot of what I know about Microsoft Excel. There is so much to do with Excel that it's pretty difficult to put everything I know down, but I'll do my best. There are links along the side that will jump you to specific spots if you know what you're looking for. If not, you can just start reading. Enjoy!</p>
+        <!-- content -->
+        <div id="basics">
+          <h2>Basics</h2>
+          <p>To begin with, Excel uses a grid-based system for storing data. (<a href="#fig1">See Figure 1.</a>) The columns, going across the top as letters, begin at "A" and continues up to "XFD". Once the letters reach "Z", they restart with "A" as the first and the second set of letters incrementing. For example, After "Z", it follows: "AA", "AB", "AC", etc. The rows, going down the left side as numbers, begin at "1" and continue up to 1,048,576.</p>
+          <figure id="fig1">
+            <img src="./../images/tutorials/excel/excel-grid.png" alt="Excel grid system"/>
+            <figcaption>&emsp;Figure 1--Excel grid</figcaption>
+          </figure>
+        </div>
+        <div id="functions">
+          <h2>Functions</h2>
+          <p>I'm going to go over some essential functions for working with Excel. I'll start from some of the more simplier ones and progress towards more difficult ones.</p>
+          <div id="function-sum">
+            <h3><i>sum</i></h3>
+            <p>The first function is the <i>sum</i> function. The <i>sum</i> function does exactly what it's title implies: it sums a range of values. The function code is as follows: <i>=sum(A3:A4)</i>. The range is specified with the starting cell on the left of the colon and the ending cell on the right side. (<a href="#fig2">See Figure 2.</a>)You can also specify individual cells with a comma (e.g. <i>=sum(A3:A4,A5)</i>). (<a href="#fig3">See Figure 3.</a>) The range (and individual cells, if you've specified them) will light up in different colors as they are selected in the function.</p>
+            <figure id="fig2">
+              <img src="./../images/tutorials/excel/excel_sum.gif" alt="Excel sum function (with range)"/>
+              <figcaption>&emsp;Figure 2--sum function (range)</figcaption>
+            </figure>
+            <br/>
+            <figure id="fig3">
+              <img src="./../images/tutorials/excel/excel_sum_2.gif" alt="Excel sum function (with range and additional)"/>
+              <figcaption>&emsp;Figure 3--sum function (range & additional cell)</figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
       <div id="content" class="col-md-6 col-lg-3">
-        <!-- content -->
+        <!-- content: links -->
+        <ul>
+          <li><a href="#basics">Basics</a></li>
+          <li><a href="#functions">Functions</a></li>
+          <ul>
+            <li><a href="#function-sum">sum</a></li>
+          </ul>
+        </ul>
       </div>
     </div>
-    <!-- remove the footer positioning if the page scrolls -->
-    <footer style="padding: 10px; position: absolute; right: 0; bottom: 0;">
+
+    <footer style="padding: 10px;">
       <div style="text-align: right;">
-        <p>Updated: 15 DEC 2017</p>
+        <p>Updated: 19 DEC 2017</p>
       </div>
     </footer>
   </body>
 </html>
+
+
+<!-- List of figures:
+* Figure 1 - Excel grid system
+* Figure 2 - sum function (with just range)
+* Figure 3 - sum function (with range and additional)
+*
+
+
+
+-->
