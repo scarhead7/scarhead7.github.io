@@ -40,9 +40,9 @@
         <div id="basics">
           <h2>Basics</h2>
           <p>To begin with, Excel uses a grid-based system for storing data. (<a href="#fig1">See Figure 1.</a>) The columns, going across the top as letters, begin at "A" and continues up to "XFD". Once the letters reach "Z", they restart with "A" as the first and the second set of letters incrementing. For example, After "Z", it follows: "AA", "AB", "AC", etc. The rows, going down the left side as numbers, begin at "1" and continue up to 1,048,576.</p>
-          <figure id="fig1">
+          <figure class="figure" id="fig1">
             <img src="./../images/tutorials/excel/excel-grid.png" alt="Excel grid system"/>
-            <figcaption>&emsp;Figure 1--Excel grid</figcaption>
+            <figcaption>Excel grid</figcaption>
           </figure>
         </div> <!-- end of basics -->
         <div id="functions">
@@ -51,80 +51,80 @@
           <!-- function: sum -->
           <div id="function-sum">
             <h3><i>sum</i></h3>
-            <p>The first function is the <i>sum</i> function. The <i>sum</i> function does exactly what it's title implies: it sums a range of values. The function code is as follows: <i>=sum(A3:A4)</i>. The range is specified with the starting cell on the left of the colon and the ending cell on the right side. (<a href="#fig2">See Figure 2.</a>) You can also specify individual cells with a comma (e.g. <i>=sum(A3:A4,A5)</i>). (<a href="#fig3">See Figure 3.</a>) The range (and individual cells, if you've specified them) will light up in different colors as they are selected in the function.</p>
-            <figure id="fig2">
-              <img src="./../images/tutorials/excel/excel_sum.gif" alt="Excel sum function (with range)"/>
-              <figcaption>&emsp;Figure 2--sum function (range)</figcaption>
+            <p>The first function is the <i>sum</i> function. The <i>sum</i> function does exactly what it's title implies: it sums a range of values. The function code is as follows: <code>=sum(A3:A4)</code>. The range is specified with the starting cell on the left of the colon and the ending cell on the right side. (<a href="#fig2">See Figure 2.</a>) You can also specify individual cells with a comma (e.g. <code>=sum(A3:A4,A5)</code>). (<a href="#fig3">See Figure 3.</a>) The range (and individual cells, if you've specified them) will light up in different colors as they are selected in the function.</p>
+            <figure class="figure" id="fig2">
+              <img src="./../images/tutorials/excel/excel_sum.png" alt="Excel sum function (with range)"/>
+              <figcaption>sum function (range)</figcaption>
             </figure>
             <br/>
-            <figure id="fig3">
-              <img src="./../images/tutorials/excel/excel_sum_2.gif" alt="Excel sum function (with range and additional)"/>
-              <figcaption>&emsp;Figure 3--sum function (range & additional cell)</figcaption>
+            <figure class="figure" id="fig3">
+              <img src="./../images/tutorials/excel/excel_sum_2.png" alt="Excel sum function (with range and additional)"/>
+              <figcaption>sum function (range & additional cell)</figcaption>
             </figure>
           </div> <!-- end of function sum -->
           <!-- function: today -->
           <div id="function-today">
             <h3><i>today</i></h3>
-            <p>The <i>today</i> function returns today's date as an Excel-formatted date (i.e. really just a number (<a href="#fig4">See Figure 4.</a>) that, if formatted properly, represents a date (<a href="#fig5">See Figure 5.</a>). This function is fairly simply and straightforward. There's nothing fancy, really, that you can do with it; it is really useful when creating longer functions for company payroll sheets, etc. The function code is as follows: <i>=today()</i>.</p>
-            <figure id="fig4">
+            <p>The <i>today</i> function returns today's date as an Excel-formatted date (i.e. really just a number (<a href="#fig4">See Figure 4.</a>) that, if formatted properly, represents a date (<a href="#fig5">See Figure 5.</a>). This function is fairly simply and straightforward. There's nothing fancy, really, that you can do with it; it is really useful when creating longer functions for company payroll sheets, etc. The function code is as follows: <code>=today()</code>.</p>
+            <figure class="figure" id="fig4">
               <img src="./../images/tutorials/excel/excel_today_unformatted.png" alt="today-unformatted"/>
-              <figcaption>&emsp;Figure 4--today function (formatting removed)</figcaption>
+              <figcaption>today function (formatting removed)</figcaption>
             </figure>
             <br/>
-            <figure id="fig5">
+            <figure class="figure" id="fig5">
               <img src="./../images/tutorials/excel/excel_today_formatted.png" alt="today-formatted"/>
-              <figcaption>&emsp;Figure 5--today function (formatting kept)</figcaption>
+              <figcaption>today function (formatting kept)</figcaption>
             </figure>
           </div> <!-- end of function today -->
           <!-- function: average -->
           <div id="function-average">
             <h3><i>average</i></h3>
-            <p>Commonly in Excel, one needs to know the average of a set of numbers. One can achieve this without using the average function (e.g. <i>=SUM(A1:A4)/COUNT(A1:A4)</i>), but it can become difficult when you need to change the range or otherwise update the function. Luckily, the developers of Excel built in a function for the average; the code for this function is as follows: <i>=average(A1:A4)</i>. </p>
-            <figure id="fig6">
+            <p>Commonly in Excel, one needs to know the average of a set of numbers. One can achieve this without using the average function (e.g. <code>=SUM(A1:A4)/COUNT(A1:A4)</code>), but it can become difficult when you need to change the range or otherwise update the function. Luckily, the developers of Excel built in a function for the average; the code for this function is as follows: <code>=average(A1:A4)</code>. </p>
+            <figure class="figure" id="fig6">
               <img src="./../images/tutorials/excel/excel_average.png" alt="average function"/>
-              <figcaption>&emsp;Figure 6--average function</figcaption>
+              <figcaption>average function</figcaption>
             </figure>
           </div> <!-- end of function average -->
-          <!-- function:  -->
-          <div id="function-">
-            <h3><i></i></h3>
+          <!-- function: max -->
+          <div id="function-max">
+            <h3><i>max</i></h3>
+            <p>When looking for the greatest number in a given set of numbers, the <i>max</i> function comes in quite handy. This function goes through every number in the set and determines what the greatest number is. The function updates itself everytime the workbook refreshes. The code for the <i>max</i> function is as follows: <code>=max(A1:A7)</code>.</p>
+            <figure class="figure" id="fig7">
+              <img src="./../images/tutorials/excel/excel_max.png" alt="max function"/>
+              <figcaption>max function</figcaption>
+            </figure>
+          </div> <!-- end of function max -->
+          <!-- function: min -->
+          <div id="function-min">
+            <h3><i>min</i></h3>
+            <p>The <i>min</i> function does exactly the oposite of the <i>max</i> function (go figure, right?). As in the <i>max</i> function, a set of numbers is defined. Those numbers are then searched and the least greatest is found and returned. The code is as follows: <code>=min(a1:a10)</code>.</p>
+            <figure class="figure" id="fig8">
+              <img src="./../images/tutorials/excel/excel_min.png" alt="min function"/>
+              <figcaption>min function</figcaption>
+            </figure>
+          </div> <!-- end of function min -->
+          <!-- function: if -->
+          <div id="function-conditional">
+            <h3><i>if</i></h3>
+            <p>The conditional function in Excel is exactly the same in Excel as in any other programming language. If the equation specified is true, it will return the first value. If it evaluates to false, then the second value is returned. In <a href="#fig9">figure 9</a>, the equation <code>1 + 1 = 2</code> evaluates to true (at least I hope), so the first value (cell A1) is returned. If math were broken and 1 plus 1 did NOT equal 2, then the second value (cell A2) would be returned. Any Boolean equation can be entered into the <i>if</i> function.</p>
+            <figure class="figure" id="fig9">
+              <img src="./../images/tutorials/excel/excel_conditional.png" alt="if function"/>
+              <figcaption>if function</figcaption>
+            </figure>
+          </div> <!-- end of function if -->
+          <!-- function: count -->
+          <div id="function-count">
+            <h3><i>count</i></h3>
             <p></p>
-            <figure id="fig">
+            <figure class="figure" id="fig">
               <img src="" alt=""/>
               <figcaption></figcaption>
             </figure>
-            <figure id="fig">
+            <figure class="figure" id="fig">
               <img src="" alt=""/>
               <figcaption></figcaption>
             </figure>
-          </div> <!-- end of function  -->
-          <!-- function:  -->
-          <div id="function-">
-            <h3><i></i></h3>
-            <p></p>
-            <figure id="fig">
-              <img src="" alt=""/>
-              <figcaption></figcaption>
-            </figure>
-          </div> <!-- end of function  -->
-          <!-- function:  -->
-          <div id="function-">
-            <h3><i></i></h3>
-            <p></p>
-            <figure id="fig">
-              <img src="" alt=""/>
-              <figcaption></figcaption>
-            </figure>
-          </div> <!-- end of function  -->
-          <!-- function:  -->
-          <div id="function-">
-            <h3><i></i></h3>
-            <p></p>
-            <figure id="fig">
-              <img src="" alt=""/>
-              <figcaption></figcaption>
-            </figure>
-          </div> <!-- end of function  -->
+          </div> <!-- end of function count -->
         </div> <!-- end of functions -->
         <div id="formatting">
         </div> <!-- end of formatting -->
@@ -138,10 +138,10 @@
             <li><a href="#function-sum">sum</a></li>
             <li><a href="#function-today">today</a></li>
             <li><a href="#function-average">average</a></li>
-            <li><a href="#"><del>max</del></a></li>
-            <li><a href="#"><del>min</del></a></li>
-            <li><a href="#"><del>if</del></del></a></li>
-            <li><a href="#"><del>count</del></a></li>
+            <li><a href="#function-max">max</a></li>
+            <li><a href="#function-min"><del>min</del></a></li>
+            <li><a href="#function-conditional"><del>if</del></del></a></li>
+            <li><a href="#function-count"><del>count</del></a></li>
             <li><a href="#"></a></li>
           </ul>
           <li><a href="#"><del>Formatting</del></a></li>
@@ -168,7 +168,7 @@
 
     <footer style="padding: 10px;">
       <div style="text-align: right;">
-        <p><a href="#">Go to top</a>&emsp;Updated: 21 DEC 2017</p>
+        <p><a href="#">Go to top</a>&emsp;Updated: 23 DEC 2017</p>
       </div>
     </footer>
   </body>
@@ -177,11 +177,12 @@
 
 <!-- List of figures:
 * Figure 1 - Excel grid system                          {png}
-* Figure 2 - sum function (with just range)             {gif}
-* Figure 3 - sum function (with range and additional)   {gif}
+* Figure 2 - sum function (with just range)             {png}
+* Figure 3 - sum function (with range and additional)   {png}
 * Figure 4 - today (date unformatted)                   {png}
 * Figure 5 - today (date formatted)                     {png}
 * Figure 6 - average                                    {png}
+* Figure 7 - max                                        {png}
 *
 
 
