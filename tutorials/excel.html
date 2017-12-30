@@ -106,7 +106,7 @@
           <!-- function: if -->
           <div id="function-conditional">
             <h3><i>if</i></h3>
-            <p>The conditional function in Excel is exactly the same in Excel as in any other programming language. If the equation specified is true, it will return the first value. If it evaluates to false, then the second value is returned. In <a href="#fig9">figure 9</a>, the equation <code>1 + 1 = 2</code> evaluates to true (at least I hope), so the first value (cell A1) is returned. If math were broken and 1 plus 1 did NOT equal 2, then the second value (cell A2) would be returned. Any Boolean equation can be entered into the <i>if</i> function.</p>
+            <p>The conditional function in Excel is exactly the same in Excel as in any other programming language. If the equation specified is true, it will return the first value. If it evaluates to false, then the second value is returned. In <a href="#fig9">figure 9</a>, the equation <code>1 + 1 = 2</code> evaluates to true (at least I hope), so the first value (cell A1) is returned. If math were broken and 1 plus 1 did NOT equal 2, then the second value (cell A2) would be returned. Any Boolean equation can be entered into the <i>if</i> function. The code for the <i>if</i> function is as follows: <code>=if(<i>boolean expression</i>)</code>.</p>
             <figure class="figure" id="fig9">
               <img src="./../images/tutorials/excel/excel_conditional.png" alt="if function"/>
               <figcaption>if function</figcaption>
@@ -115,18 +115,92 @@
           <!-- function: count -->
           <div id="function-count">
             <h3><i>count</i></h3>
-            <p></p>
-            <figure class="figure" id="fig">
-              <img src="" alt=""/>
-              <figcaption></figcaption>
-            </figure>
-            <figure class="figure" id="fig">
-              <img src="" alt=""/>
-              <figcaption></figcaption>
+            <p>This next function--<i>count</i>--counts up the number of cells in a given range that includes numbers. (Note: it ignores letters, punctuation, and other characters. It <strong>only</strong> counts integers.) In <a href="#fig10">Figure 10</a>, I put six filled cells in the function range, but only three of those cells are actually counted (even though all six are filled). Only cells A1, A2, and A4 are counted (because they are integers); the other three cells are disregarded by the function because they include letters ("a" and "d") and punctuation (a double quotation mark).</p>
+            <figure class="figure" id="fig10">
+              <img src="./../images/tutorials/excel/excel_count.png" alt="count function"/>
+              <figcaption>count function</figcaption>
             </figure>
           </div> <!-- end of function count -->
         </div> <!-- end of functions -->
         <div id="formatting">
+          <h2>Formatting</h2>
+          <p>Have you ever seen the movie <i>Megamind</i>? It a great movie about a villian turning into an unlikely hero. At one point, the villian-turned-good-guy (Megamind) is fighting the good-guy-turned-bad-guy (Titan) (Confusing, I know; just go watch the movie.). Titan is telling Megamind that the town isn't big enough for two supervillians. Megamind responds by telling Titan that he (meaning Titan) is a villian, just not a super one. Titan questions what the difference is and Megamind responds (with a lot of flair, I might add): Presentation! The presentation of data is critical. Too much presentation and people are overwhelmed. Yet too little presentation and people start falling asleep. Now, this isn't a tutorial on boardroom and office presentations, but a lot of the same principles apply. The biggest one: <i>don't overdo it</i>!</p>
+          <div id="formatting-cells">
+            <div id="font">
+              <h3>Font</h3>
+              <p>Since the font is how the user will be reading your data, it's important to know how to format it. There are many different ways to change this aspect of the presentation of the data: you can change the font type, change the font color, the size, etc. In most Excel setups, there is a menu bar already displayed that allows for the changing of cell fonts. (<a href="#fig11">See Figure 11.</a>) The menu itself is fairly selfexplanitory, but I'll run over each button anyways.</p>
+              <figure class="figure" id="fig12">
+                <img src="./../images/tutorials/excel/excel_font_menu.png" alt="excel font menu"/>
+                <figcaption>Excel Font Menu</figcaption>
+              </figure>
+              <ul>
+                <li><p>The first dropdown box (that says "Calibri" in the figure) is the font type selection. Once you click it, a selection of different font type sets is revealed. Normally, I don't change the font from the default setting because I like the look of Calibri in Excel.</p></li>
+                <li><p>The second dropdown box is the font size. For most data I leave this alone as well. Eleven is a good, readable size for me and the people who view my spreadsheets.</p></li>
+                <li><p>The two buttons directly to the left of the font size box work the same as changing the font size with the dropdown box. The "A" with the upward facing arrow increases the font size by one; whereas the "A" with the downward facing arrow decreases the font size by one.</p></li>
+                <li><p>The capital "B" on the second row <strong>bolds</strong> the text of your cell.</p>
+                  <figure class="figure" id="fig12">
+                    <img src="./../images/tutorials/excel/excel_cell_bold.png" alt="cell bolded"/>
+                    <figcaption>Cell Contents Bolded</figcaption>
+                  </figure>
+                </li>
+                <li><p>The "I" next to the "B" will emphasize or <i>italicize</i> the cell text.</p>
+                  <figure class="figure" id="fig13">
+                    <img src="./../images/tutorials/excel/excel_cell_italic.png" alt="cell italicized"/>
+                    <figcaption>Cell Contents Emphasized</figcaption>
+                  </figure>
+                </li>
+                <li><p>The "U" will underline the contents of the cell.</p>
+                  <figure class="figure" id="fig14">
+                    <img src="./../images/tutorials/excel/excel_cell_underline.png" alt="cell underlined"/>
+                    <figcaption>Cell Contents Underlined</figcaption>
+                  </figure>
+                </li>
+                <li><p>We will discuss borders in a <a href="#borders">separate section</a>.</li>
+                <li><p>The paint bucket will fill the cell with the selected color. When the small arrow to the right is pressed, a color-picker will appear (<a href="#fig16">see Figure 16</a>). If the paint bucket itself is clicked, the color of the underline will be applied (as in <a href="#fig15">Figure 15</a>).</p>
+                  <figure class="figure" id="fig15">
+                    <img src="./../images/tutorials/excel/excel_cell_filled.png" alt="cell filled"/>
+                    <figcaption>Cell Contents Filled with the default color</figcaption>
+                  </figure> <br/>
+                  <figure class="figure" id="fig16">
+                    <img src="./../images/tutorials/excel/excel_cell_fill_color_picker.png" alt="cell-color-picker"/>
+                    <figcaption>Color Picker for Cell Color Filling</figcaption>
+                  </figure>
+                </li>
+                <li><p>In <a href="#fig11">Figure 11</a>, the "A" with the red underline is for the font color itself. This button works similar to the paint bucket. The arrow generates a color-picker (<a href="#fig18">see Figure 18</a>) and the clicking of the button itself yields the color of the underline (<a href="#fig17">see Figure 17</a>).</p>
+                  <figure class="figure" id="fig17">
+                    <img src="./../images/tutorials/excel/excel_cell_font_colored.png" alt="font coloring"/>
+                    <figcaption>Cell Font Colored with the default color</figcaption>
+                  </figure> <br/>
+                  <figure class="figure" id="fig18">
+                    <img src="./../images/tutorials/excel/excel_cell_font_color_picker.png" alt="font color picker"/>
+                    <figcaption>Color Picker for Font Coloring</figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div> <!-- end of cell font formatting -->
+            <div id="fill">
+              <h3>Fill</h3>
+              <p></p>
+              <!--
+                <figure class="figure" id="fig">
+                  <img src="" alt=""/>
+                  <figcaption></figcaption>
+                </figure>
+              -->
+            </div> <!-- end of cell fill formatting -->
+            <div id="align">
+              <h3>Alignment</h3>
+              <p></p>
+            </div> <!-- end of cell alignment formatting -->
+            <div id="borders">
+              <h3>Borders</h3>
+              <p></p>
+            </div> <!-- end of cell borders formatting -->
+            <div id="numbering">
+              <h3>Number Formats</h3>
+              <p></p>
+            </div> <!-- end of cell number formatting -->
+          </div> <!-- end of cell formatting -->
         </div> <!-- end of formatting -->
       </div>
       <div id="content" class="col-md-6 col-lg-3">
@@ -139,21 +213,20 @@
             <li><a href="#function-today">today</a></li>
             <li><a href="#function-average">average</a></li>
             <li><a href="#function-max">max</a></li>
-            <li><a href="#function-min"><del>min</del></a></li>
-            <li><a href="#function-conditional"><del>if</del></del></a></li>
-            <li><a href="#function-count"><del>count</del></a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#function-min">min</a></li>
+            <li><a href="#function-conditional">if</a></li>
+            <li><a href="#function-count">count</a></li>
+            <!-- <li><a href="#"></a></li> -->
           </ul>
-          <li><a href="#"><del>Formatting</del></a></li>
+          <li><a href="#formatting">Formatting</a></li>
           <ul>
-            <li><a href="#"><del>Cells</del></a></li>
+            <li><a href="#formatting-cells">Cells</a></li>
             <ul>
-              <li><a href="#"><del>Font</del></a></li> <!-- includes font size -->
-              <li><a href="#"><del>Color</del></a></li>
-              <li><a href="#"><del>Fill</del></a></li>
-              <li><a href="#"><del>Alignment</del></a></li>
-              <li><a href="#"><del>Borders</del></a></li>
-              <li><a href="#"><del>Number Formats</del></a></li>
+              <li><a href="#font"><del>Font</del></a></li> <!-- includes font size/color -->
+              <li><a href="#fill"><del>Fill</del></a></li>
+              <li><a href="#align"><del>Alignment</del></a></li>
+              <li><a href="#borders"><del>Borders</del></a></li>
+              <li><a href="#numbering"><del>Number Formats</del></a></li>
             </ul>
             <li><a href="#"><del>Conditional</del></a></li>
           </ul>
@@ -183,6 +256,9 @@
 * Figure 5 - today (date formatted)                     {png}
 * Figure 6 - average                                    {png}
 * Figure 7 - max                                        {png}
+* Figure 8 - min                                        {png}
+* Figure 9 - conditional                                {png}
+* Figure 10 - count                                     {png}
 *
 
 
