@@ -82,8 +82,26 @@
             <img src="./../images/tutorials/c/first_func_unix_screenshot.png" alt="Unix executable inaction screenshot"/>
             <figcaption>"first_func" Unix executable in action</figcaption>
           </figure> <br/>
-          <p>If you would like to download this source code, <a href="./../files/tutorials/c/first_func.c" download>here</a> is the link. <br/> The binary for a Cygwin system on Windows can be found <a href="./../files/tutorials/c/first_func_cygwin.exe" download>here</a> (built on Windows 10). <br/> The binary for a Unix system (i.e. Linux or Mac OS) can be found <a href="./../files/tutorials/c/first_func_unix.out" download>here</a> (built on Ubuntu 16.04.3).</p>
-        </div> <br/>
+          <p>If you would like to download this source code, <a href="./../files/tutorials/c/first_func.c" download>here</a> is the link. <br/> The binary for a Cygwin system on Windows can be found <a href="./../files/tutorials/c/first_func_cygwin.exe" download>here</a> (built on Windows 10). <br/> The binary for a Unix system (i.e. Linux or Mac OS) can be found <a href="./../files/tutorials/c/first_func_unix.out" download>here</a> (built on Kali Linux 3.20.2).</p>
+        </div>
+        <br/> <br/>
+        <p>The second example, was how to receive input from the user. The source is found below.</p>
+        <figure class="figure" id="fig4">
+          <img src="./../images/tutorials/c/first_from_user_source.png" alt="first_from_user_source_image"/>
+          <figcaption>"first_from_user" source (pg. 19)</figcaption>
+        </figure> <br/>
+        <p>Similar to the first example, <i>main</i> begins on line twelve. Variables are declared on lines fourteen through sixteen. On line eighteen is when the example's purpose really starts. Lines eighteen and twenty both prompt the user for an integer. Lines nineteen and twenty-one <strong>receive</strong> input from the user. The function <code>scanf()</code> takes two parameters (for this example). The first parameter tells the function what is being read (in this case, an integer is being read); the second parameter is the variable where it will be saved. From there, we can perform the calculations we performed in the first example. A difference in outputting the results from the first example is on line twenty-six: we have to output what the user has entered as well as the result. Thus, we now have three variables being output instead of one.</p>
+        <p>Here are the screenshots for the binaries being run:</p>
+        <figure class="figure" id="fig5">
+          <img src="./../images/tutorials/c/first_from_user_cygwin_screenshot.png" alt="Cygwin executable inaction screenshot"/>
+          <figcaption>"first_from_user" Cygwin executable in action</figcaption>
+        </figure> <br/>
+        <figure class="figure" id="fig6">
+          <img src="./../images/tutorials/c/first_from_user_unix_screenshot.png" alt="Unix executable inaction screenshot"/>
+          <figcaption>"first_from_user" Unix executable in action</figcaption>
+        </figure> <br/>
+        <p>If you would like to download this source code, <a href="./../files/tutorials/c/first_from_user.c" download>here</a> is the link. <br/> The binary for a Cygwin system on Windows can be found <a href="./../files/tutorials/c/first_from_user_cygwin.exe" download>here</a> (built on Windows 10). <br/> The binary for a Unix system (i.e. Linux or Mac OS) can be found <a href="./../files/tutorials/c/first_from_user_unix.out" download>here</a> (built on Kali Linux 3.20.2).</p>
+        <br/> <br/>
         <div id="prototypes">
           <h4>Prototypes</h4>
           <p>Prototypes are a declaration of a function before the function is actually "fleshed out". If a prototype is not present, all functions <strong>must</strong> be declared before <i>main</i>.</p>
