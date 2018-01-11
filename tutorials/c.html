@@ -30,79 +30,87 @@
         <li class="page_links"><a href="./inspiration.html">Inspiration</a></li>
       </ul>
     </header>
-    <h1>C Tutorial</h1>
-    <p>I built this page for one of my classes (CIT 160). We are learning C during the first half of the semester and I figured I'd put a good portion of my knowledge up here so maybe I might be able to help my classmates a little bit.</p>
-    <p>I run through quite a bit of a C, but this is in no way, shape, or form an all-inclusive tutorial of the C language.</p>
-    <hr style="height:1px; border:none; background-color:#C0CCCC;"/> <br/>
-    <!-- sorry, not optimized for smaller screens; it's just a quick page I'm throwing together -->
-    <div id="content" class="col-lg-9">
-      <div id="main">
-        <h4>main</h4>
-        <p>Every program that you will ever write in C will have a <i>main</i> function. Some main functions will be as simple as one line: calling another function. Some will be more complicated, composed of all the code for the entire program. A basic <i>main</i> looks similar to this:<br/>
-          <code>int main(void) {  <br/>
-          &emsp;&emsp;return 0;   <br/>
-          }</code><br/>
-        The <code>return 0;</code> is the value the <i>main</i> function will return (more on <a href="#functions">functions</a> later). Zero is normally a successful return value, whereas any other value is some form of error code. If the above code snippet were to be compiled and run, nothing would happen. The program would execute, then immediately terminate with a successful state.</p>
-        <p><i>Main</i> can also have parameters passed in from the console upon runtime. </p>
-      </div> <br/>
-      <div id="vars">
-        <h4>Variables</h4>
-        <p></p>
-      </div> <br/>
-      <div id="print">
-        <h4>Printing to the console</h4>
-        <p></p>
-      </div> <br/>
-      <div id="bibliotecas">
-        <h4>Libraries</h4>
-        <p></p>
-      </div> <br/>
-      <div id="functions">
-        <h4>Functions</h4>
-        <p></p>
-      </div> <br/>
-      <div id="examples">
-        <h4>Examples from Brother Barney's book for CIT160</h4>
-        <p>Even though the other sections are still slightly incomplete, I figured I'd throw in the examples we should have already read in the book.</p>
-        <p>The first example is a simple function. With a few additions of my own (which differ slightly from the book), here is the source code for the first example.</p>
-        <figure class="figure" id="fig1">
-          <img src="./../images/tutorials/c/first_func_source.png" alt="first_func_source_image"/>
-          <figcaption>"first_func" source (pg. 16)</figcaption>
-        </figure> <br/>
-        <p>On line twelve, you notice the beginning of <i>main</i>. <i>Main</i> doesn't return until line seventeen. On line seven, I include a <a href="#bibliotecas">library</a>--called <i>standard i/o</i>. Line nine begins what is called the <a href="#prototypes"><i>prototypes</i></a>. Line twenty begins the function prototyped by line ten. Line fourteen is both a variable declaration (see <a href="#vars">Variables</a>) and an assignment. Line fifteen is a call to a function that prints to the console (see <a href="#print">Print to Console</a>). Notice on line twelve (the opening line of <i>main</i>) I put <code>void</code> in paratheses after the declaration of <i>main</i>. This is redundant (the paratheses can be empty), but lets both me and future readers of my code know that I meant for nothing to be passed into <i>main</i>. (See <a href="#main">Main</a> for a better description of passing parameters into <i>main</i>.)</p>
-        <p>Below, I have binaries for both a Cygwin system on Windows and a Unix system. The following screenshots show both binaries in action.</p>
-        <figure class="figure" id="fig2">
-          <img src="./../images/tutorials/c/first_func_cygwin_screenshot.png" alt="Cygwin executable inaction screenshot"/>
-          <figcaption>"first_func" Cygwin executable in action</figcaption>
-        </figure> <br/>
-        <figure class="figure" id="fig3">
-          <img src="./../images/tutorials/c/first_func_unix_screenshot.png" alt="Unix executable inaction screenshot"/>
-          <figcaption>"first_func" Unix executable in action</figcaption>
-        </figure> <br/>
-        <p>If you would like to download this source code, <a href="./../files/tutorials/c/first_func.c" download>here</a> is the link. <br/> The binary for a Cygwin system on Windows can be found <a href="./../files/tutorials/c/first_func_cygwin.exe" download>here</a> (built on Windows 10). <br/> The binary for a Unix system (i.e. Linux or Mac OS) can be found <a href="./../files/tutorials/c/first_func_unix.out" download>here</a> (built on Ubuntu 16.04.3).</p>
-      </div> <br/>
-      <div id="prototypes">
-        <h4>Prototypes</h4>
-        <p>Prototypes are a declaration of a function before the function is actually "fleshed out". If a prototype is not present, all functions <strong>must</strong> be declared before <i>main</i>.</p>
-      </div> <br/>
+
+    <div class="container-fluid">
+      <h1>C Tutorial</h1>
+      <p>I built this page for one of my classes (CIT 160). We are learning C during the first half of the semester and I figured I'd put a good portion of my knowledge up here so maybe I might be able to help my classmates a little bit.</p>
+      <p>I run through quite a bit of a C, but this is in no way, shape, or form an all-inclusive tutorial of the C language.</p>
+      <hr style="height:1px; border:none; background-color:#C0CCCC;"/> <br/>
+      <!-- sorry, not optimized for smaller screens; it's just a quick page I'm throwing together -->
+      <div id="content" class="col-lg-9">
+        <div id="main">
+          <h4>main</h4>
+          <p>Every program that you will ever write in C will have a <i>main</i> function. Some main functions will be as simple as one line: calling another function. Some will be more complicated, composed of all the code for the entire program. A basic <i>main</i> looks similar to this:<br/>
+            <code>int main(void) {  <br/>
+            &emsp;&emsp;return 0;   <br/>
+            }</code><br/>
+          The <code>return 0;</code> is the value the <i>main</i> function will return (more on <a href="#functions">functions</a> later). Zero is normally a successful return value, whereas any other value is some form of error code. If the above code snippet were to be compiled and run, nothing would happen. The program would execute, then immediately terminate with a successful state.</p>
+          <p><i>Main</i> can also have parameters passed in from the console upon runtime. </p>
+        </div> <br/>
+        <div id="vars">
+          <h4>Variables</h4>
+          <p></p>
+        </div> <br/>
+        <div id="print">
+          <h4>Printing to the console</h4>
+          <p></p>
+        </div> <br/>
+        <div id="bibliotecas">
+          <h4>Libraries</h4>
+          <p></p>
+        </div> <br/>
+        <div id="functions">
+          <h4>Functions</h4>
+          <p></p>
+        </div> <br/>
+        <div id="examples">
+          <h4>Examples from Brother Barney's book for CIT160</h4>
+          <p>Even though the other sections are still slightly incomplete, I figured I'd throw in the examples we should have already read in the book.</p>
+          <p>The first example is a simple function. With a few additions of my own (which differ slightly from the book), here is the source code for the first example.</p>
+          <figure class="figure" id="fig1">
+            <img src="./../images/tutorials/c/first_func_source.png" alt="first_func_source_image"/>
+            <figcaption>"first_func" source (pg. 16)</figcaption>
+          </figure> <br/>
+          <p>On line twelve, you notice the beginning of <i>main</i>. <i>Main</i> doesn't return until line seventeen. On line seven, I include a <a href="#bibliotecas">library</a>--called <i>standard i/o</i>. Line nine begins what is called the <a href="#prototypes"><i>prototypes</i></a>. Line twenty begins the function prototyped by line ten. Line fourteen is both a variable declaration (see <a href="#vars">Variables</a>) and an assignment. Line fifteen is a call to a function that prints to the console (see <a href="#print">Print to Console</a>). Notice on line twelve (the opening line of <i>main</i>) I put <code>void</code> in paratheses after the declaration of <i>main</i>. This is redundant (the paratheses can be empty), but lets both me and future readers of my code know that I meant for nothing to be passed into <i>main</i>. (See <a href="#main">Main</a> for a better description of passing parameters into <i>main</i>.)</p>
+          <p>Below, I have binaries for both a Cygwin system on Windows and a Unix system. The following screenshots show both binaries in action.</p>
+          <figure class="figure" id="fig2">
+            <img src="./../images/tutorials/c/first_func_cygwin_screenshot.png" alt="Cygwin executable inaction screenshot"/>
+            <figcaption>"first_func" Cygwin executable in action</figcaption>
+          </figure> <br/>
+          <figure class="figure" id="fig3">
+            <img src="./../images/tutorials/c/first_func_unix_screenshot.png" alt="Unix executable inaction screenshot"/>
+            <figcaption>"first_func" Unix executable in action</figcaption>
+          </figure> <br/>
+          <p>If you would like to download this source code, <a href="./../files/tutorials/c/first_func.c" download>here</a> is the link. <br/> The binary for a Cygwin system on Windows can be found <a href="./../files/tutorials/c/first_func_cygwin.exe" download>here</a> (built on Windows 10). <br/> The binary for a Unix system (i.e. Linux or Mac OS) can be found <a href="./../files/tutorials/c/first_func_unix.out" download>here</a> (built on Ubuntu 16.04.3).</p>
+        </div> <br/>
+        <div id="prototypes">
+          <h4>Prototypes</h4>
+          <p>Prototypes are a declaration of a function before the function is actually "fleshed out". If a prototype is not present, all functions <strong>must</strong> be declared before <i>main</i>.</p>
+        </div> <br/>
+      </div>
+      <!-- page links -->
+      <div id="content" class="col-lg-3">
+        <p><i>&emsp;Content:</i></p>
+        <a href="#main"><del>Main</del></a> <br/>
+        <a href="#vars"><del>Variables</del></a> <br/>
+        <a href="#print"><del>Print to Console</del></a> <br/>
+        <a href="#bibliotecas"><del>Libraries</del></a> <br/>
+        <a href="#functions"><del>Functions</del></a> <br/>
+        <a href="#examples"><del>Examples from CIT160 book</del></a> <br/>
+        <a href="#prototypes"><del>Prototypes</del></a> <br/>
+        <a href=""><del></del></a> <br/>
+        <a href=""><del></del></a> <br/>
+        <a href=""><del></del></a> <br/>
+        <a href=""><del></del></a> <br/>
+        <a href=""><del></del></a> <br/>
+        <a href=""><del></del></a> <br/>
+      </div>
     </div>
-    <!-- page links -->
-    <div id="content" class="col-lg-3">
-      <p><i>&emsp;Content:</i></p>
-      <a href="#main"><del>Main</del></a> <br/>
-      <a href="#vars"><del>Variables</del></a> <br/>
-      <a href="#print"><del>Print to Console</del></a> <br/>
-      <a href="#bibliotecas"><del>Libraries</del></a> <br/>
-      <a href="#functions"><del>Functions</del></a> <br/>
-      <a href="#examples"><del>Examples from CIT160 book</del></a> <br/>
-      <a href="#prototypes"><del>Prototypes</del></a> <br/>
-      <a href=""><del></del></a> <br/>
-      <a href=""><del></del></a> <br/>
-      <a href=""><del></del></a> <br/>
-      <a href=""><del></del></a> <br/>
-      <a href=""><del></del></a> <br/>
-      <a href=""><del></del></a> <br/>
+
+    <div id="construction" class="alert alert-info">
+      <p><strong>Under construction!</strong> Thank you for your patience!</p>
     </div>
+
     <footer>
       <div style="text-align: right;">
         <p><a href="#">Go to top</a>&emsp;Updated: 10 JAN 2018</p>
