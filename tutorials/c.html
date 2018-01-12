@@ -46,7 +46,16 @@
             &emsp;&emsp;return 0;   <br/>
             }</code><br/>
           The <code>return 0;</code> is the value the <i>main</i> function will return (more on <a href="#functions">functions</a> later). Zero is normally a successful return value, whereas any other value is some form of error code. If the above code snippet were to be compiled and run, nothing would happen. The program would execute, then immediately terminate with a successful state.</p>
-          <p><i>Main</i> can also have parameters passed in from the console upon runtime. </p>
+          <p><i>Main</i> can also have parameters passed in from the console upon runtime. There are two variables that you can receive in <i>main</i>: <code>int argc</code> and <code>char **argv</code>. The variable <code>int argc</code> counts the number of arguments passed in to the program from the command line. Variable <code>char **argv</code> holds the arguments passed in from the command line. For example, in the source code below, I pull in three variables from the command line.</p>
+          <figure class="figure" id="cli_var_execution_fig">
+            <img src="./../images/tutorials/c/cli_var_source.png" alt="cli_var.c in action screenshot"/>
+            <figcaption>"cli_var" source</figcaption>
+          </figure> <br/>
+          <p>In the next figure, I actually run the program. The first variable passed in to the program is <strong>always</strong> the program's name. The second and third variables are the ones that appear after the program name on the command line (i.e. "Kali" and "Linux").</p>
+          <figure class="figure" id="cli_var_execution_fig">
+            <img src="./../images/tutorials/c/cli_var_screenshot.png" alt="cli_var.c in action screenshot"/>
+            <figcaption>"cli_var" inaction</figcaption>
+          </figure> <br/>
         </div> <br/>
         <div id="vars">
           <h4>Variables</h4>
@@ -68,17 +77,17 @@
           <h4>Examples from Brother Barney's book for CIT160</h4>
           <p>Even though the other sections are still slightly incomplete, I figured I'd throw in the examples we should have already read in the book.</p>
           <p>The first example is a simple function. With a few additions of my own (which differ slightly from the book), here is the source code for the first example.</p>
-          <figure class="figure" id="fig1">
+          <figure class="figure" id="frist_func_source_fig">
             <img src="./../images/tutorials/c/first_func_source.png" alt="first_func_source_image"/>
             <figcaption>"first_func" source (pg. 16)</figcaption>
           </figure> <br/>
           <p>On line twelve, you notice the beginning of <i>main</i>. <i>Main</i> doesn't return until line seventeen. On line seven, I include a <a href="#bibliotecas">library</a>--called <i>standard i/o</i>. Line nine begins what is called the <a href="#prototypes"><i>prototypes</i></a>. Line twenty begins the function prototyped by line ten. Line fourteen is both a variable declaration (see <a href="#vars">Variables</a>) and an assignment. Line fifteen is a call to a function that prints to the console (see <a href="#print">Print to Console</a>). Notice on line twelve (the opening line of <i>main</i>) I put <code>void</code> in paratheses after the declaration of <i>main</i>. This is redundant (the paratheses can be empty), but lets both me and future readers of my code know that I meant for nothing to be passed into <i>main</i>. (See <a href="#main">Main</a> for a better description of passing parameters into <i>main</i>.)</p>
           <p>Below, I have binaries for both a Cygwin system on Windows and a Unix system. The following screenshots show both binaries in action.</p>
-          <figure class="figure" id="fig2">
+          <figure class="figure" id="first_func_cygwin_fig">
             <img src="./../images/tutorials/c/first_func_cygwin_screenshot.png" alt="Cygwin executable inaction screenshot"/>
             <figcaption>"first_func" Cygwin executable in action</figcaption>
           </figure> <br/>
-          <figure class="figure" id="fig3">
+          <figure class="figure" id="first_func_unix_fig">
             <img src="./../images/tutorials/c/first_func_unix_screenshot.png" alt="Unix executable inaction screenshot"/>
             <figcaption>"first_func" Unix executable in action</figcaption>
           </figure> <br/>
@@ -86,17 +95,17 @@
         </div>
         <br/> <br/>
         <p>The second example, was how to receive input from the user. The source is found below.</p>
-        <figure class="figure" id="fig4">
+        <figure class="figure" id="first_from_user_source_fig">
           <img src="./../images/tutorials/c/first_from_user_source.png" alt="first_from_user_source_image"/>
           <figcaption>"first_from_user" source (pg. 19)</figcaption>
         </figure> <br/>
         <p>Similar to the first example, <i>main</i> begins on line twelve. Variables are declared on lines fourteen through sixteen. On line eighteen is when the example's purpose really starts. Lines eighteen and twenty both prompt the user for an integer. Lines nineteen and twenty-one <strong>receive</strong> input from the user. The function <code>scanf()</code> takes two parameters (for this example). The first parameter tells the function what is being read (in this case, an integer is being read); the second parameter is the variable where it will be saved. From there, we can perform the calculations we performed in the first example. A difference in outputting the results from the first example is on line twenty-six: we have to output what the user has entered as well as the result. Thus, we now have three variables being output instead of one.</p>
         <p>Here are the screenshots for the binaries being run:</p>
-        <figure class="figure" id="fig5">
+        <figure class="figure" id="first_from_user_cygwin_fig">
           <img src="./../images/tutorials/c/first_from_user_cygwin_screenshot.png" alt="Cygwin executable inaction screenshot"/>
           <figcaption>"first_from_user" Cygwin executable in action</figcaption>
         </figure> <br/>
-        <figure class="figure" id="fig6">
+        <figure class="figure" id="first_from_user_unix_fig">
           <img src="./../images/tutorials/c/first_from_user_unix_screenshot.png" alt="Unix executable inaction screenshot"/>
           <figcaption>"first_from_user" Unix executable in action</figcaption>
         </figure> <br/>
@@ -132,7 +141,7 @@
 
     <footer>
       <div style="text-align: right;">
-        <p><a href="#">Go to top</a>&emsp;Updated: 10 JAN 2018</p>
+        <p><a href="#">Go to top</a>&emsp;Updated: 12 JAN 2018</p>
       </div>
     </footer>
   </body>
