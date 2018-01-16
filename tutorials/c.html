@@ -80,6 +80,9 @@
         <div id="examples">
           <h4>Examples from Brother Barney's book for CIT160</h4>
           <p>Even though the other sections are still slightly incomplete, I figured I'd throw in the examples we should have already read in the book.</p>
+          <div id="integrity-warning" class="alert alert-danger">
+            <p><strong>Fellow students!</strong> In order to maintain the integrity of this course, please attempt the examples from the book yourself before coming here. I've included the source code in an easy-to-download manner. Please have the integrity Brother Barney expects of us.</p>
+          </div>
           <p>The first example is a simple function. With a few additions of my own (which differ slightly from the book), here is the source code for the first example.</p>
           <figure class="figure" id="frist_func_source_fig">
             <img src="./../images/tutorials/c/first_func_source.png" alt="first_func_source_image"/>
@@ -123,15 +126,33 @@
           </figure> <br/>
           <p><code>main</code> most just has stuff that we've already seen before--printing to the console, receiving input from the user, declaring variables, calling functions/procedures, etc. The interesting stuff--and what this example looks at--occurs starting on line twenty-seven. On this line, we declare what is called a file pointer. This does nothing more than point to a file that we have stored in memory (but is currently empty). Immediately, we call a function (<code>fopen()</code>) that returns an actual pointer to a file we have created. Here, <code>fopen()</code> takes two variables. The first is the name of the file. The second is the file access mode. The access mode can be one of six options: <i> r, w, a, r+, w+,</i> and <i>a+</i>. I go further in depth to these options <a href="#files">here</a>. Suffice it to say here that the option <i>w</i> opens a new file to write to. Line twenty-nine uses <code>fprintf()</code> to write to the file. The first variable here is the file pointer we defined on line twenty-seven. The next variable is the text to be stored; in this case, we specify two numbers. Those numbers are given as variables three and four. Line thirty closes the file (more info on closing files <a href="#files">here</a>).</p>
           <p>Here are the screenshots for the binaries being run:</p>
-          <figure class="figure" id="first_from_user_cygwin_fig">
+          <figure class="figure" id="write_to_file_cygwin_fig">
             <img src="./../images/tutorials/c/write_to_file_cygwin_screenshot.png" alt="Cygwin executable inaction screenshot"/>
             <figcaption>"write_to_file" Cygwin executable in action</figcaption>
           </figure> <br/>
-          <figure class="figure" id="first_from_user_unix_fig">
+          <figure class="figure" id="write_to_file_unix_fig">
             <img src="./../images/tutorials/c/write_to_file_unix_screenshot.png" alt="Unix executable inaction screenshot"/>
             <figcaption>"write_to_file" Unix executable in action</figcaption>
           </figure> <br/>
           <p>If you would like to download this source code, <a href="./../files/tutorials/c/write_to_file.c" download>here</a> is the link. <br/> The binary for a Cygwin system on Windows can be found <a href="./../files/tutorials/c/write_to_file_cygwin.exe" download>here</a> (built on Windows 10). <br/> The binary for a Unix system (i.e. Linux or Mac OS) can be found <a href="./../files/tutorials/c/write_to_file_unix.out" download>here</a> (built on Kali Linux 3.20.2).</p>
+
+          <br/> <br/>
+          <p>An associated example with the previous one demonstrates how to read data from a file. The source is found below.</p>
+          <figure class="figure" id="read_from_file_source_fig">
+            <img src="./../images/tutorials/c/read_from_file_source.png" alt="read_from_file_source_image"/>
+            <figcaption>"read_from_file" source (pg. 22)</figcaption>
+          </figure> <br/>
+          <p><code>main</code> just prints the numbers we receive from the file. The magic happens on line </p>
+          <p>Here are the screenshots for the binaries being run:</p>
+          <figure class="figure" id="read_from_file_cygwin_fig">
+            <img src="./../images/tutorials/c/read_from_file_cygwin_screenshot.png" alt="Cygwin executable inaction screenshot"/>
+            <figcaption>"read_from_file" Cygwin executable in action</figcaption>
+          </figure> <br/>
+          <figure class="figure" id="read_from_file_unix_fig">
+            <img src="./../images/tutorials/c/read_from_file_unix_screenshot.png" alt="Unix executable inaction screenshot"/>
+            <figcaption>"read_from_file" Unix executable in action</figcaption>
+          </figure> <br/>
+          <p>If you would like to download this source code, <a href="./../files/tutorials/c/read_from_file.c" download>here</a> is the link. <br/> The binary for a Cygwin system on Windows can be found <a href="./../files/tutorials/c/read_from_file_cygwin.exe" download>here</a> (built on Windows 10). <br/> The binary for a Unix system (i.e. Linux or Mac OS) can be found <a href="./../files/tutorials/c/read_from_file_unix.out" download><del>here</del></a> (built on Kali Linux 3.20.2).</p>
         </div>
         <br/> <br/>
         <div id="prototypes">
