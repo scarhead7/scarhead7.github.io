@@ -73,6 +73,10 @@
           <h4>Functions</h4>
           <p></p>
         </div> <br/>
+        <div id="files">
+          <h4>Files</h4>
+          <p></p>
+        </div> <br/>
         <div id="examples">
           <h4>Examples from Brother Barney's book for CIT160</h4>
           <p>Even though the other sections are still slightly incomplete, I figured I'd throw in the examples we should have already read in the book.</p>
@@ -117,7 +121,7 @@
             <img src="./../images/tutorials/c/write_to_file_source.png" alt="write_to_file_source_image"/>
             <figcaption>"write_to_file" source (pg. 21)</figcaption>
           </figure> <br/>
-          <p></p>
+          <p><code>main</code> most just has stuff that we've already seen before--printing to the console, receiving input from the user, declaring variables, calling functions/procedures, etc. The interesting stuff--and what this example looks at--occurs starting on line twenty-seven. On this line, we declare what is called a file pointer. This does nothing more than point to a file that we have stored in memory (but is currently empty). Immediately, we call a function (<code>fopen()</code>) that returns an actual pointer to a file we have created. Here, <code>fopen()</code> takes two variables. The first is the name of the file. The second is the file access mode. The access mode can be one of six options: <i> r, w, a, r+, w+,</i> and <i>a+</i>. I go further in depth to these options <a href="#files">here</a>. Suffice it to say here that the option <i>w</i> opens a new file to write to. Line twenty-nine uses <code>fprintf()</code> to write to the file. The first variable here is the file pointer we defined on line twenty-seven. The next variable is the text to be stored; in this case, we specify two numbers. Those numbers are given as variables three and four. Line thirty closes the file (more info on closing files <a href="#files">here</a>).</p>
           <p>Here are the screenshots for the binaries being run:</p>
           <figure class="figure" id="first_from_user_cygwin_fig">
             <img src="./../images/tutorials/c/write_to_file_cygwin_screenshot.png" alt="Cygwin executable inaction screenshot"/>
@@ -143,9 +147,9 @@
         <a href="#print"><del>Print to Console</del></a> <br/>
         <a href="#bibliotecas"><del>Libraries</del></a> <br/>
         <a href="#functions"><del>Functions</del></a> <br/>
+        <a href="#files"><del>Files</del></a> <br/>
         <a href="#examples">Examples from CIT160 book</a> <br/>
         <a href="#prototypes"><del>Prototypes</del></a> <br/>
-        <a href=""><del></del></a> <br/>
         <a href=""><del></del></a> <br/>
         <a href=""><del></del></a> <br/>
         <a href=""><del></del></a> <br/>
@@ -159,8 +163,9 @@
     </div>
 
     <footer>
+      <p>Thanks for reading! If you have any suggestions for the site feel free to shoot me an email at <a href="mailto:snellcorporate@gmail.com">snellcorporate@gmail.com</a>!</p>
       <div style="text-align: right;">
-        <p><a href="#">Go to top</a>&emsp;Updated: 12 JAN 2018</p>
+        <p><a href="#">Go to top</a>&emsp;Updated: 16 JAN 2018</p>
       </div>
     </footer>
   </body>
