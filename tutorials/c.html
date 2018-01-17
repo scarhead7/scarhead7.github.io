@@ -155,12 +155,12 @@
           <p>If you would like to download this source code, <a href="./../files/tutorials/c/read_from_file.c" download>here</a> is the link. <br/> The binary for a Cygwin system on Windows can be found <a href="./../files/tutorials/c/read_from_file_cygwin.exe" download>here</a> (built on Windows 10). <br/> The binary for a Unix system (i.e. Linux or Mac OS) can be found <a href="./../files/tutorials/c/read_from_file_unix.out" download><del>here</del></a> (built on Kali Linux 3.20.2).</p>
 
           <br/> <br/>
-          <p> The source is found below.</p>
+          <p>Everyday we have to make choices. Computers are not different. They have to be able to make a choice between two or more options. In coding, this is called a <em>conditional</em>. The source is found below.</p>
           <figure class="figure" id="conditional_source_fig">
             <img src="./../images/tutorials/c/conditional_source.png" alt="conditional_source_image"/>
             <figcaption>"conditional" source (pg. 25)</figcaption>
           </figure> <br/>
-          <p>I felt <code>main</code> could hold all the code. The book has the magic code in a procedure, but I didn't see a reason to do so with this simple example.</p>
+          <p>Again, I felt <code>main</code> could hold all the code. Line thirteen starts off the conditional. It compares <code>aNumber</code> (defined on line eleven) to zero. If the number is zero, we know it can't be either even or odd. Line fifteen says that if the number is not zero, but <code>aNumber</code> mod two is equal to zero (meaning can the number be evenly divided by two), then print it is even. If the line thirteen and line fifteen both are not true, then line eighteen will print that the number is odd (the only option remaining). </p>
           <p>Here are the screenshots for the binaries being run:</p>
           <figure class="figure" id="conditional_cygwin_fig">
             <img src="./../images/tutorials/c/conditional_cygwin_screenshot.png" alt="Cygwin executable inaction screenshot"/>
@@ -171,11 +171,47 @@
             <figcaption>"conditional" Unix executable in action</figcaption>
           </figure> <br/>
           <p>If you would like to download this source code, <a href="./../files/tutorials/c/conditional.c" download>here</a> is the link. <br/> The binary for a Cygwin system on Windows can be found <a href="./../files/tutorials/c/conditional_cygwin.exe" download>here</a> (built on Windows 10). <br/> The binary for a Unix system (i.e. Linux or Mac OS) can be found <a href="./../files/tutorials/c/conditional_unix.out" download><del>here</del></a> (built on Kali Linux 3.20.2).</p>
+
+          <br/> <br/>
+          <p>Starting on page thirty, the book starts to talk about the for loop. The source is found below.</p>
+          <figure class="figure" id="loops_for_source_fig">
+            <img src="./../images/tutorials/c/loops_for_source.png" alt="loops_for_source_image"/>
+            <figcaption>"loops_for" source (pg. 30-31)</figcaption>
+          </figure> <br/>
+          <p>Line thirteen defines an array variable. This array holds five numbers (for more information on arrays, go <a href="#arrays">here</a>). Line fifteen begins the for loop. <code>int lcv = 0</code>; initializes the <i>loop control variable</i>; <code>lcv < SIZE</code> uses a constant I made (on line nine) to tell the loop when to stop; <code>++lcv</code> tells the loop that everytime I reach the end of the loop to increment <code>lcv</code> by one. This particular program prints the array out on one line.</p>
+          <p>Here are the screenshots for the binaries being run:</p>
+          <figure class="figure" id="loops_for_cygwin_fig">
+            <img src="./../images/tutorials/c/loops_for_cygwin_screenshot.png" alt="Cygwin executable inaction screenshot"/>
+            <figcaption>"loops_for" Cygwin executable in action</figcaption>
+          </figure> <br/>
+          <figure class="figure" id="loops_for_unix_fig">
+            <img src="./../images/tutorials/c/loops_for_unix_screenshot.png" alt="Unix executable inaction screenshot"/>
+            <figcaption>"loops_for" Unix executable in action</figcaption>
+          </figure> <br/>
+          <p>If you would like to download this source code, <a href="./../files/tutorials/c/loops_for.c" download>here</a> is the link. <br/> The binary for a Cygwin system on Windows can be found <a href="./../files/tutorials/c/loops_for_cygwin.exe" download>here</a> (built on Windows 10). <br/> The binary for a Unix system (i.e. Linux or Mac OS) can be found <a href="./../files/tutorials/c/loops_for_unix.out" download><del>here</del></a> (built on Kali Linux 3.20.2).</p>
+
+          <br/> <br/>
+          <p>Page thirty-two begins the explaination of a while loop. The source is found below.</p>
+          <figure class="figure" id="loops_while_source_fig">
+            <img src="./../images/tutorials/c/loops_while_source.png" alt="loops_for_source_image"/>
+            <figcaption>"loops_while" source (pg. 30-31)</figcaption>
+          </figure> <br/>
+          <p>A while loop does what a for loop does, just slightly different. A while loop goes until a given condition becomes true (as does a for loop), but does not have a built-in counter. This example will continue to prompt the user for the number "42" until they enter that number.</p>
+          <p>Here are the screenshots for the binaries being run:</p>
+          <figure class="figure" id="loops_while_cygwin_fig">
+            <img src="./../images/tutorials/c/loops_while_cygwin_screenshot.png" alt="Cygwin executable inaction screenshot"/>
+            <figcaption>"loops_while" Cygwin executable in action</figcaption>
+          </figure> <br/>
+          <figure class="figure" id="loops_while_unix_fig">
+            <img src="./../images/tutorials/c/loops_while_unix_screenshot.png" alt="Unix executable inaction screenshot"/>
+            <figcaption>"loops_while" Unix executable in action</figcaption>
+          </figure> <br/>
+          <p>If you would like to download this source code, <a href="./../files/tutorials/c/loops_while.c" download>here</a> is the link. <br/> The binary for a Cygwin system on Windows can be found <a href="./../files/tutorials/c/loops_while_cygwin.exe" download>here</a> (built on Windows 10). <br/> The binary for a Unix system (i.e. Linux or Mac OS) can be found <a href="./../files/tutorials/c/loops_while_unix.out" download><del>here</del></a> (built on Kali Linux 3.20.2).</p>
         </div> <!-- end of examples div -->
         <br/> <br/>
         <div id="prototypes">
           <h4>Prototypes</h4>
-          <p>Prototypes are a declaration of a function before the function is actually "fleshed out". If a prototype is not present, all functions <strong>must</strong> be declared before <i>main</i>.</p>
+          <p>Prototypes are a declaration of a function before the function is actually "fleshed out". If a prototype is not present, all functions <strong>must</strong> be declared before <code>main</code>.</p>
         </div> <br/>
       </div>
       <!-- page links -->
@@ -183,14 +219,14 @@
         <p><i>&emsp;Content:</i></p>
         <a href="#main"><del>Main</del></a> <br/>
         <a href="#vars"><del>Variables</del></a> <br/>
+        <a href="#arrays"><del>Arrays</del></a> <br/>
         <a href="#print"><del>Print to Console</del></a> <br/>
+        <a href="#loops"><del>Loops</del></a> <br/>
         <a href="#bibliotecas"><del>Libraries</del></a> <br/>
         <a href="#functions"><del>Functions</del></a> <br/>
         <a href="#files"><del>Files</del></a> <br/>
         <a href="#examples">Examples from CIT160 book</a> <br/>
         <a href="#prototypes"><del>Prototypes</del></a> <br/>
-        <a href=""><del></del></a> <br/>
-        <a href=""><del></del></a> <br/>
         <a href=""><del></del></a> <br/>
         <a href=""><del></del></a> <br/>
         <a href=""><del></del></a> <br/>
