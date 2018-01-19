@@ -63,6 +63,10 @@
         </div> <br/>
         <div id="print">
           <h4>Printing to the console</h4>
+          Topics
+          <ul>
+            <li>printf("%1.2f", var)</li>
+          </ul>
           <p></p>
         </div> <br/>
         <div id="bibliotecas">
@@ -207,6 +211,24 @@
             <figcaption>"loops_while" Unix executable in action</figcaption>
           </figure> <br/>
           <p>If you would like to download this source code, <a href="./../files/tutorials/c/loops_while.c" download>here</a> is the link. <br/> The binary for a Cygwin system on Windows can be found <a href="./../files/tutorials/c/loops_while_cygwin.exe" download>here</a> (built on Windows 10). <br/> The binary for a Unix system (i.e. Linux or Mac OS) can be found <a href="./../files/tutorials/c/loops_while_unix.out" download><del>here</del></a> (built on Kali Linux 3.20.2).</p>
+
+          <br/> <br/>
+          <p>A <code>struct</code> is a way of aggregating a collection of elements. The source is found below.</p>
+          <figure class="figure" id="structs_source_fig">
+            <img src="./../images/tutorials/c/structs_source.png" alt="structs_source_image"/>
+            <figcaption>"structs" source (pg. 38)</figcaption>
+          </figure> <br/>
+          <p>As I mentioned earlier, a structure (or struct) is a collection of elements that is referenced by what is known as the <i>dot</i> operator (seriously just a period). You can define any <a href="#vars">variable type</a> within the structure and any number of variables (although once you get to a certain number your program's load time will increase). Once your structure has been defined (as seen on lines nine through thirteen) you can "create" a variable of your structure type (see line twenty-eight). You then access the elements inside the structure through the dot operator (as on lines thirty-one, thirty-four, thirty-seven, and forty). Note that the example shows that the dot operator works for both input and output to a structure. I added my own formatting to the output on the inseam. For a greater description of this, see <a href="#print">here</a>.</p>
+          <p>Here are the screenshots for the binaries being run:</p>
+          <figure class="figure" id="structs_cygwin_fig">
+            <img src="./../images/tutorials/c/structs_cygwin_screenshot.png" alt="Cygwin executable inaction screenshot"/>
+            <figcaption>"structs" Cygwin executable in action</figcaption>
+          </figure> <br/>
+          <figure class="figure" id="structs_unix_fig">
+            <img src="./../images/tutorials/c/structs_unix_screenshot.png" alt="Unix executable inaction screenshot"/>
+            <figcaption>"structs" Unix executable in action</figcaption>
+          </figure> <br/>
+          <p>If you would like to download this source code, <a href="./../files/tutorials/c/structs.c" download>here</a> is the link. <br/> The binary for a Cygwin system on Windows can be found <a href="./../files/tutorials/c/structs_cygwin.exe" download>here</a> (built on Windows 10). <br/> The binary for a Unix system (i.e. Linux or Mac OS) can be found <a href="./../files/tutorials/c/structs_unix.out" download><del>here</del></a> (built on Kali Linux 3.20.2).</p>
         </div> <!-- end of examples div -->
         <br/> <br/>
         <div id="prototypes">
