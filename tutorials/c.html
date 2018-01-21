@@ -38,6 +38,23 @@
       <p>I run through quite a bit of a C, but this is in no way, shape, or form an all-inclusive tutorial of the C language.</p>
       <hr style="height:1px; border:none; background-color:#C0CCCC;"/> <br/>
       <!-- sorry, not optimized for smaller screens; it's just a quick page I'm throwing together -->
+      <!-- page links -->
+      <div id="content" class="col-lg-3">
+        <p><i>&emsp;Content:</i></p>
+        <a href="#main">Main</a> <br/>
+        <a href="#vars"><del>Variables</del></a> <br/>
+        <a href="#arrays"><del>Arrays</del></a> <br/>
+        <a href="#print"><del>Print to Console</del></a> <br/>
+        <a href="#loops"><del>Loops</del></a> <br/>
+        <a href="#bibliotecas"><del>Libraries</del></a> <br/>
+        <a href="#functions"><del>Functions</del></a> <br/>
+        <a href="#files"><del>Files</del></a> <br/>
+        <a href="#examples">Examples from CIT160 book</a> <br/>
+        <a href="#prototypes"><del>Prototypes</del></a> <br/>
+        <a href="#suggestions">Any suggestions?</a> <br/>
+        <a href=""><del></del></a> <br/>
+        <a href=""><del></del></a> <br/>
+      </div>
       <div id="content" class="col-lg-9">
         <div id="main">
           <h4>main</h4>
@@ -45,7 +62,7 @@
             <code>int main(void) {  <br/>
             &emsp;&emsp;return 0;   <br/>
             }</code><br/>
-          The <code>return 0;</code> is the value the <i>main</i> function will return (more on <a href="#functions">functions</a> later). Zero is normally a successful return value, whereas any other value is some form of error code. If the above code snippet were to be compiled and run, nothing would happen. The program would execute, then immediately terminate with a successful state.</p>
+          The <code>return 0;</code> is the value the <i>main</i> function will return (more on <a href="#functions">functions</a> later). Zero is normally a successful return value, whereas any other value is some form of error code. <code>void</code> is a special type that specifies nothing (more on that in the <a href="#vars">variables</a> section). In the snippet above, <code>void</code> specifies that nothing is being passed in to the function from the terminal. This is actually redundant; I can just leave the parentheses empty and it would mean the same thing. If the above code snippet were to be compiled and run, nothing would happen. The program would execute, then immediately terminate with a successful state.</p>
           <p><i>Main</i> can also have parameters passed in from the console upon runtime. There are two variables that you can receive in <i>main</i>: <code>int argc</code> and <code>char **argv</code>. The variable <code>int argc</code> counts the number of arguments passed in to the program from the command line. Variable <code>char **argv</code> holds the arguments passed in from the command line. For example, in the source code below, I pull in three variables from the command line.</p>
           <figure class="figure" id="cli_var_execution_fig">
             <img src="./../images/tutorials/c/cli_var_source.png" alt="cli_var.c in action screenshot"/>
@@ -59,7 +76,7 @@
         </div> <br/>
         <div id="vars">
           <h4>Variables</h4>
-          <p>Variables are containers for data. There are a number of variable types in C: <code>int</code>, <code>char</code>, <code>float</code>, <code>double</code>, <code>short</code>, being some of the most common. Variable names, themselves, must follow specific conventions in order to be recognized by the C compiler. Variable names must begin with an underscore ("_") or letter (uppercase or lowercase). </p>
+          <p>Variables are containers for data. There are a number of variable types in C: <code>int</code>, <code>char</code>, <code>float</code>, <code>double</code>, and <code>void</code>. In addition, there are a few designators that change the way these types operate: <code>unsigned</code>, <code>short</code>, <code>long</code>, and <code>signed</code>. Variable names, themselves, must follow specific conventions in order to be recognized by the C compiler. Variable names must begin with an underscore ("_") or letter (uppercase or lowercase). </p>
         </div> <br/>
         <div id="print">
           <h4>Printing to the console</h4>
@@ -236,23 +253,6 @@
           <p>Prototypes are a declaration of a function before the function is actually "fleshed out". If a prototype is not present, all functions <strong>must</strong> be declared before <code>main</code>.</p>
         </div> <br/>
       </div>
-      <!-- page links -->
-      <div id="content" class="col-lg-3">
-        <p><i>&emsp;Content:</i></p>
-        <a href="#main"><del>Main</del></a> <br/>
-        <a href="#vars"><del>Variables</del></a> <br/>
-        <a href="#arrays"><del>Arrays</del></a> <br/>
-        <a href="#print"><del>Print to Console</del></a> <br/>
-        <a href="#loops"><del>Loops</del></a> <br/>
-        <a href="#bibliotecas"><del>Libraries</del></a> <br/>
-        <a href="#functions"><del>Functions</del></a> <br/>
-        <a href="#files"><del>Files</del></a> <br/>
-        <a href="#examples">Examples from CIT160 book</a> <br/>
-        <a href="#prototypes"><del>Prototypes</del></a> <br/>
-        <a href=""><del></del></a> <br/>
-        <a href=""><del></del></a> <br/>
-        <a href=""><del></del></a> <br/>
-      </div>
     </div>
 
     <div id="construction" class="alert alert-info">
@@ -260,7 +260,7 @@
     </div>
 
     <footer>
-      <p>Thanks for reading! If you have any suggestions for the site feel free to shoot me an email at <a href="mailto:snellcorporate@gmail.com">snellcorporate@gmail.com</a>!</p>
+      <p id="suggestions">Thanks for reading! If you have any suggestions for the site feel free to shoot me an email at <a href="mailto:snellcorporate@gmail.com">snellcorporate@gmail.com</a>!</p>
       <div style="text-align: right;">
         <p><a href="#">Go to top</a>&emsp;Updated: 16 JAN 2018</p>
       </div>
