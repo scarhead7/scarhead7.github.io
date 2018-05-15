@@ -6,6 +6,7 @@ This repository is for my own personal website. I have a collection of a number 
 
 
 I moved each page to it's own subdirectory. In process of doing this, I literally broke every webpage here. The following TODOs will fix them.
+
 **TODO:**
 * create the following  folders inside each subdirectory:
   * styles
