@@ -4,17 +4,17 @@
 */
 
 
-html body {
-  background-color:powderblue;
-  padding: 10px;
-}
-
 /* pads */
 .pad {
   padding: 10px;"
 }
 
-/* alignment */
+.horizontal-rule {
+  height:1px;
+  border:none;
+  background-color:#333;
+}
+
 .right-align {
   text-align: right;
 }

@@ -1,0 +1,36 @@
+/* Snell, Dallin
+** 10 NOV 2017
+**
+*/
+
+
+/* tables */
+table, td {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+th {
+  text-align: left;
+  border-bottom: 3px solid black;
+  border-right: 1px solid black;
+}
+
+/* page links */
+ul.page_links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li.page_links {
+  float: left;
+  margin: 5px;
+}
+
+ul.page_links li+li:before {
+  padding: 8px;
+  content: "|\00a0\00a0";
+}
+

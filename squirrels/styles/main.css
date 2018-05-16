@@ -5,8 +5,7 @@
 
 
 html body {
-  background-color:powderblue;
-  padding: 10px;
+  background-color: #196F3D;
 }
 
 /* pads */
@@ -15,6 +14,9 @@ html body {
 }
 
 /* alignment */
+.center-align {
+  text-align: center;
+}
 .right-align {
   text-align: right;
 }
@@ -73,5 +75,21 @@ ul.page_links li+li:before {
 .fa-youtube-play {
   background: #DD4B39;
   color: white;
+}
+
+/* Figure counters
+** idea from: tympanus.net/codrops/2013/05/02/automatic-figure-numbering-with-css-counters/
+*/
+body {
+  /* reset counter */
+  counter-reset: figures;
+}
+.figure figcaption {
+  /* increment counter */
+  counter-increment: figures;
+}
+.figure figcaption:before {
+  /* place count in figure caption */
+  content: '\2003 Figure ' counter(figures) ' - ';
 }
 
