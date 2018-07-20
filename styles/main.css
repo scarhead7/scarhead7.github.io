@@ -4,8 +4,12 @@
 */
 
 
-html body {
+* {
   background-color: #93B7BE; /* greenish-blue */
+  color: #4B3B40; /* dark brown */
+}
+
+html body {
   padding: 10px;
 }
 
