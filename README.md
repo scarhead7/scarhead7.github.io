@@ -18,4 +18,4 @@ I moved each page to it's own subdirectory. In process of doing this, I literall
 * ~~make sure all scripts resolve to correct files~~
 * ~~make sure all stylesheets resolve to correct files~~
 * make sure all links inside ALL webpages resolve correctly and no 404 errors result
-* add TV bot report to website
+* ~~add TV bot report to website~~
