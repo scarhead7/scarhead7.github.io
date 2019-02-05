@@ -121,6 +121,23 @@
               <figcaption>count function</figcaption>
             </figure>
           </div> <!-- end of function count -->
+          <!-- function: vlookup -->
+           <div id="function-vlookup">
+             <h3><i>vlookup</i></h3>
+             <p>The <i>vlookup</i> function is used for looking up values in a table. The syntax is <code>=vlookup(<i>lookup_value</i>,<i>reference_table</i>,<i>column_to_return</i>,<i>exact_match_flag</i></code>. In the <a href="#fig19">figures</a>, I use the following function: <code>=vlookup(C1,A2:B4,2,FALSE)</code>. The lookup value (<i>C1</i>) references the cell where the first column value is entered (i.e. the input). The range after the first comment (<i>A2:B4</i>) is the table that I prepared to lookup values. The single integer (<i>2</i>) indicates that after the match is found in the first column, the second column value (in the same row) is returned. At the end of the function, the <i>FALSE</i> value indicates that an exact match in the first column must be found before the second column is returned. <a href="#fig19">Figure 19</a> shows one value searched in the table; <a href="#fig20">figure 20</a> shows another value searched. If an exact value cannot be found, <code>#N/A</code> is returned (see <a href="#fig21">Figure 21</a>).</p>
+             <figure class="figure" id="fig19">
+               <img src="./../images/tutorials/excel/excel_vlookup.png" alt="vlookup function Mike"/>
+               <figcaption>vlookup function: "Mike"</figcaption>
+             </figure>
+             <figure class="figure" id="fig20">
+               <img src="./../images/tutorials/excel/excel_vlookup_2.png" alt="vlookup function Bob"/>
+               <figcaption>vlookup function: "Bob"</figcaption>
+             </figure>
+             <figure class="figure" id="fig21">
+               <img src="./../images/tutorials/excel/excel_vlookup_3.png" alt="vlookup function not found"/>
+               <figcaption>vlookup function: not found"</figcaption>
+             </figure>
+           </div> <!-- end of function vlookup -->
         </div> <!-- end of functions -->
         <div id="formatting">
           <h2>Formatting</h2>
@@ -216,6 +233,7 @@
             <li><a href="#function-min">min</a></li>
             <li><a href="#function-conditional">if</a></li>
             <li><a href="#function-count">count</a></li>
+            <li><a href="#function-vlookup"><del>vlookup</del></a></li>
             <!-- <li><a href="#"></a></li> -->
           </ul>
           <li><a href="#formatting">Formatting</a></li>
@@ -242,7 +260,7 @@
     <footer style="padding: 10px;">
       <p id="suggestions">Thanks for reading! If you have any suggestions for the site feel free to shoot me an email at <a href="mailto:snellcorporate@gmail.com">snellcorporate@gmail.com</a>!</p>
       <div style="text-align: right;">
-        <p><a href="#">Go to top</a>&emsp;Updated: 23 DEC 2017</p>
+        <p><a href="#">Go to top</a>&emsp;Updated: 04 FEB 2019</p>
       </div>
     </footer>
   </body>
@@ -260,7 +278,11 @@
 * Figure 8 - min                                        {png}
 * Figure 9 - conditional                                {png}
 * Figure 10 - count                                     {png}
-*
+* ...
+* Figure 19 - vlookup                                   {png}
+* Figure 20 - vlookup 2                                 {png}
+* Figure 21 - vlookup 3                                 {png}
+* 
 
 
 
