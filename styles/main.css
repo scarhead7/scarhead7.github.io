@@ -23,6 +23,11 @@ html body {
   text-align: right;
 }
 
+/* welcome paragraph styles on homepage */
+.welcome-paragraph {
+  padding: 0px 100px;
+}
+
 /* page links */
 ul.page_links {
   list-style-type: none;
