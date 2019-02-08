@@ -10,7 +10,12 @@
 
 html body {
   background-color: #93B7BE; /* greenish-blue */
+  font-family: 'Ubuntu', sans-serif; /* from Google */
   padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8 {
+  font-family: 'Crimson Text', serif; /* from Google */
 }
 
 /* pads */
