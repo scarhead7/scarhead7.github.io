@@ -1,0 +1,19 @@
+/* Snell, Dallin
+** 13 FEB 19
+** styles for my custom 404 page
+*/
+
+
+body {
+  /* center everything */
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+h1 {
+  font-family: 'Hanalei Fill', cursive;
+  font-size: 10em; /* make it big! */
+  /* place the text below the header right up against it */
+  margin-bottom: 0px;
+}
+
