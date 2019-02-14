@@ -1,0 +1,22 @@
+/* Snell, Dallin
+** 13 FEB 2019
+** tutorial styling
+*/
+
+
+/* style for the html body of the Excel tutorial page */
+.excel-body {
+    background-color: #c6d8d3;
+    color: #515751;
+}
+
+/* style for the html footer of the Excel tutorial page */
+.excel-footer {
+    padding: 10px;
+}
+
+/* style for the updated date of the Excel tutorial page */
+.excel-footer div {
+    text-align: right;
+}
+

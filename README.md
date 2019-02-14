@@ -20,3 +20,6 @@ I moved each page to it's own subdirectory. In process of doing this, I literall
 * make sure all links inside ALL webpages resolve correctly and no 404 errors result
 * ~~add TV bot report to website~~
 * create a custom 404 webpage (as per [Custom 404](https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/))
+* update the Excel tutorial with greater detail
+* check style on all pages
+  * make sure all styles are in external files
