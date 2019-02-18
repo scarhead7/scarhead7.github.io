@@ -4,6 +4,22 @@
 */
 
 
+/* page links */
+ul.page_links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li.page_links {
+  float: left;
+  margin: 5px;
+}
+ul.page_links li+li:before {
+  padding: 8px;
+  content: "|\00a0\00a0";
+}
+
 /* style for the html body of the Excel tutorial page */
 .excel-body {
     background-color: #c6d8d3;
