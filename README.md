@@ -23,3 +23,6 @@ I moved each page to it's own subdirectory. In process of doing this, I literall
 * update the Excel tutorial with greater detail
 * check style on all pages
   * make sure all styles are in external files
+    * /inspiration/inspiration.html
+    * /tutorials/c.html (simple)
+    * /tutorials/excel.html (simple)
