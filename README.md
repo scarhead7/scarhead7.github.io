@@ -26,3 +26,4 @@ I moved each page to it's own subdirectory. In process of doing this, I literall
     * /inspiration/inspiration.html
     * /tutorials/c.html (simple)
     * /tutorials/excel.html (simple)
+* add google analytics to all pages
