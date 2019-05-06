@@ -1,0 +1,52 @@
+<!-- Snell, Dallin
+     03 MAY 2019
+-->
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tic Tac Toe</title>
+    <meta name="author" content="Dallin Snell">
+    <link rel="icon" href="./images/tictactoe.png">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+  </head>
+  <body>
+    <div id="turn">X</div>
+    <div id="winner"></div>
+    <div id="beforediv" style="position: fixed; right: 0; top: 0">
+      <div>
+        <button id="restartbutton" type="button" onclick="restart()">Restart game</button>
+        <button id="resigngame" type="button" onclick="resign()">Resign game</button>
+      </div>
+      <div>
+        <button id="savegame" onclick="saveGame()">Save game</button>
+        <button id="loadgame" onclick="loadGame()">Load game</button>
+      </div>
+    </div>
+    <div class="row">
+      <div id="cellone" class="column-odd" onclick="whoseturn($(this))"></div>
+      <div id="celltwo" class="column-even" onclick="whoseturn($(this))"></div>
+      <div id="cellthree" class="column-odd" onclick="whoseturn($(this))"></div>
+    </div>
+    <div class="row">
+      <div id="cellfour" class="column-even" onclick="whoseturn($(this))"></div>
+      <div id="cellfive" class="column-odd" onclick="whoseturn($(this))"></div>
+      <div id="cellsix" class="column-even" onclick="whoseturn($(this))"></div>
+    </div>
+    <div class="row">
+      <div id="cellseven" class="column-odd" onclick="whoseturn($(this))"></div>
+      <div id="celleight" class="column-even" onclick="whoseturn($(this))"></div>
+      <div id="cellnine" class="column-odd" onclick="whoseturn($(this))"></div>
+    </div>
+
+    <div id="afterdiv" style="position: fixed; right: 0; bottom: 0">
+      <p id="usermessages"></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./scripts/scripts.js" type="text/javascript"></script>
+  </body>
+</html>
