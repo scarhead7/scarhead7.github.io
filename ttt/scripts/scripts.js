@@ -89,11 +89,12 @@ function checkwinner()
   if(board[6] == "O" && board[7] == "O" && board[8] == "O")
     playerWon("O");
 
-  /* check if the board is full and it's a draw */
-  if( board[0] && board[1] && board[2] &&
-      board[3] && board[4] && board[5] && 
-      board[6] && board[7] && board[8]  )
-    draw();
+  /* check if the board is full and it's a draw, only if someone hasn't won the game */
+  if($("#winner").text())
+    if( board[0] && board[1] && board[2] &&
+        board[3] && board[4] && board[5] && 
+        board[6] && board[7] && board[8]  )
+      draw();
 } // end of checkcells()
 
 /* https://stackoverflow.com/questions/20672490/how-to-know-whether-modal-boxes-alert-prompt-confirm-have-been-disabled-i
