@@ -1,0 +1,58 @@
+/* Snell, Dallin
+** 03 MAY 2019
+** Tic Tac Toe stylesheet
+*/
+
+
+/* hides the scrollbar on the right */
+html {
+  overflow-y: hidden;
+}
+
+/* styles for each cell within the grid */
+.column-odd,
+.column-even {
+  float: left;
+  width: 33.33%;
+  height: 200px;
+  width: 200px;
+  border: solid;
+  font-size: 160px;
+  text-align: center;
+}
+
+/* resets each row */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* colors for alternating cells */
+.column-odd {
+  background-color: #aaa;
+}
+
+/* colors for alternating cells */
+.column-even {
+  background-color: #ccc;
+}
+
+/* hides whose turn it is and the winner from the user's view */
+#turn, #winner {
+  display: none;
+}
+
+/* at the top of the page on the right */
+#beforediv {
+  margin: 10px 10px 0px 0px;
+}
+
+#afterdiv {
+  margin: 10px 10px 0px 0px;
+}
+
+/* temporarily hide the save and load buttons in the interface */
+#savegame, #loadgame {
+  display: none;
+}
