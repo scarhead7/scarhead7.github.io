@@ -1,0 +1,76 @@
+/* Snell, Dallin
+** 20 MAY 2019
+*/
+
+
+/* https://www.hongkiat.com/blog/theming-jquery-ui-accordion/
+https://stackoverflow.com/questions/5110249/wildcard-in-css-for-classes */
+
+html {
+  font-family: 'Bitter', serif;
+}
+
+/* styles that should be applied to all semester headers */
+.ui-accordion-header {
+  /* increase height */
+  line-height: 3em;
+  /* not all the way across the screen */
+  width: 45%;
+  /* push accordions together */
+  margin: 0px;
+  /* move text away from window edge */
+  text-indent: 15px;
+}
+
+/* styles specifically for the Spring semester headers (all years) */
+h3[id^="SP"] {
+  background-color: #7cfc00;
+}
+
+/* styles specifically for the Summer session headers (all years) */
+h3[id^="SS"] {
+  background-color: #ffc300;
+}
+
+/* styles specifically for the Fall semester headers (all years) */
+h3[id^="FA"] {
+  background-color: #cb6028;
+}
+
+/* styles specifically for the Winter semester headers (all years) */
+h3[id^="WI"] {
+  background-color: #005c97;
+}
+
+.ui-accordion-content {
+  width: 100%;
+  background-color: #f3f3f3;
+  color: #777;
+  width: 45%;
+  box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, .4),
+        inset 0px 1px 1px 0px rgba(0, 0, 0, .2);
+}
+
+div .buttons {
+  margin: 0;
+  /* move the buttons down slightly */
+  padding-top: 10px;
+}
+
+div button {
+  /* increase the size of the buttons */
+  line-height: 2.5em;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+img {
+  padding: 10px;
+}
+
+/* place the footer at the bottom right of the page, slightly away from the edge */
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-right: 15px;
+}
