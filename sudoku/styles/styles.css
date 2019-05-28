@@ -1,0 +1,96 @@
+/* Snell, Dallin
+** 14 MAY 2019
+*/
+
+
+#board {
+  height: 90px;
+  width: 100%;
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cell {
+  height: 90px;
+  width: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#cell-one-one {
+  background: red;
+}
+
+#cell-one-two {
+  background: orange;
+}
+
+#cell-one-three {
+  background: blue;
+}
+
+#cell-one-four {
+  background: green;
+}
+
+#cell-one-five {
+  background: gold;
+}
+
+#cell-one-six {
+  background: red;
+}
+
+#cell-one-seven {
+  background: orange;
+}
+
+#cell-one-eight {
+  background: blue;
+}
+
+#cell-one-nine {
+  background: green;
+}
+
+
+
+#cell-two-one {
+  background: red;
+}
+
+#cell-two-two {
+  background: orange;
+}
+
+#cell-two-three {
+  background: blue;
+}
+
+#cell-two-four {
+  background: green;
+}
+
+#cell-two-five {
+  background: gold;
+}
+
+#cell-two-six {
+  background: red;
+}
+
+#cell-two-seven {
+  background: orange;
+}
+
+#cell-two-eight {
+  background: blue;
+}
+
+#cell-two-nine {
+  background: green;
+}
+
