@@ -5,7 +5,7 @@
 
 var key = "!abcd1234!";
 
-var encrypted = CryptoJS.AES.encrypt("Dallin", key).toString();
+var encrypted = CryptoJS.AES.encrypt("Dallin", key);
 
-$("#ciphertext").html(encrypted);
+$("#ciphertext").html(encrypted.toString());
 $("#plaintext").html(CryptoJS.AES.decrypt(encrypted, key).toString());
