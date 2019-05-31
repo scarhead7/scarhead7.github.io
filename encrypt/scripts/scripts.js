@@ -4,4 +4,4 @@
 
 
 $("#ciphertext").html(CryptoJS.AES.encrypt("Dallin", "P4ssword!").toString());
-$("#plaintext").html(CryptoJS.AES.decrypt(CryptoJS.AES.encrypt("Dallin", "P4ssword!").toString()).toString());
+$("#plaintext").html(CryptoJS.AES.decrypt(CryptoJS.AES.encrypt("Dallin", "P4ssword!")).toString());
