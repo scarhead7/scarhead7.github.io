@@ -3,5 +3,9 @@
 */
 
 
-$("#ciphertext").html(CryptoJS.AES.encrypt("Dallin", "P4ssword!").toString());
-$("#plaintext").html(CryptoJS.AES.decrypt(CryptoJS.AES.encrypt("Dallin", "P4ssword!")).toString());
+var key = "!abcd1234!";
+
+var encrypted = CryptoJS.AES.encrypt("Dallin", key).toString();
+
+$("#ciphertext").html(encrypted);
+$("#plaintext").html(CryptoJS.AES.decrypt(encrypted, key).toString());
