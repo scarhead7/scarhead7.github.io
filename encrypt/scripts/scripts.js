@@ -3,10 +3,10 @@
 */
 
 
-function ENCRYPTING(message)
+function ENCRYPTING()
 {
   var key = "abcd1234";
-  var encrypted = CryptoJS.AES.encrypt(message, key);
+  var encrypted = CryptoJS.AES.encrypt($("#PLAINTEXT".html(), key);
 
   $("#ciphertext").html(encrypted.toString());
   
@@ -14,7 +14,7 @@ function ENCRYPTING(message)
 
 function DECRYPTING(encryptedMessage)
 {
-  var key = "!abcd1234!";
+  var key = "abcd1234";
   var decrypted = CryptoJS.AES.decrypt(encryptedMessage, key);
 
   $("#plaintext").html(decrypted.toString(CryptoJS.enc.Utf8));
