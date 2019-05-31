@@ -10,13 +10,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Encrypt/Decrypt</title>
     <meta name="author" content="Dallin Snell">
-    <meta name="description" content="description here">
-    <meta name="keywords" content="keywords,here">
+    <meta name="description" content="Securely encrypts and decrypts a message right in the user's browser.">
   </head>
   <body>
-    <label>PLAINTEXT</label>
-    <div id="plaintext">Dallin</div>
-    <button onclick="ENCRYPTING('Dallin')">Encrypt</button>
+    <label>PLAINTEXT</label><input type="text" id="PLAINTEXT" name="message">
+    <button onclick="ENCRYPTING()">Encrypt</button>
     <label>CIPHERTEXT</label>
     <div id="ciphertext"></div>
   
