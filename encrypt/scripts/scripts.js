@@ -3,4 +3,4 @@
 */
 
 
-$("#ciphertext").innerHTML(CryptoJS.AES.encrypt("Dallin", "P4ssword!"));
+$("#ciphertext").html(CryptoJS.AES.encrypt("Dallin", "P4ssword!").toString());
