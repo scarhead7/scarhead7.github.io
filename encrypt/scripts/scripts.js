@@ -3,9 +3,19 @@
 */
 
 
-var key = "!abcd1234!";
+function ENCRYPTING(message)
+{
+  var key = "!abcd1234!";
+  var encrypted = CryptoJS.AES.encrypt(message, key);
 
-var encrypted = CryptoJS.AES.encrypt("Dallin", key);
+  $("#ciphertext").html(encrypted.toString());
+  
+} // end of ENCRYPTING()
 
-$("#ciphertext").html(encrypted.toString());
-$("#plaintext").html(CryptoJS.AES.decrypt(encrypted, key).toString(CryptoJS.enc.Utf8));
+function DECRYPTING(encryptedMessage)
+{
+  var key = "!abcd1234!";
+  var decrypted = CryptoJS.AES.decrypt(encryptedMessage, key);
+
+  $("#plaintext").html(decrypted.toString(CryptoJS.enc.Utf8));
+} // end of DECRYPTING()
