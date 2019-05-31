@@ -5,7 +5,7 @@
 
 function ENCRYPTING(message)
 {
-  var key = "!abcd1234!";
+  var key = "abcd1234";
   var encrypted = CryptoJS.AES.encrypt(message, key);
 
   $("#ciphertext").html(encrypted.toString());
