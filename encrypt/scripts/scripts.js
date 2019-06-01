@@ -5,17 +5,17 @@
 
 function ENCRYPTING()
 {
-  var key = "abcd1234";
-  var encrypted = CryptoJS.AES.encrypt($("#PLAINTEXT").html(), key);
+  var key = ($("#PASSKEY").val());
+  var encrypted = CryptoJS.AES.encrypt($("#PLAINTEXT").val(), key);
 
-  $("#ciphertext").html(encrypted.toString());
+  $("#CIPHERTEXT").html(encrypted.toString());
   
 } // end of ENCRYPTING()
 
-function DECRYPTING(encryptedMessage)
+function DECRYPTING()
 {
-  var key = "abcd1234";
-  var decrypted = CryptoJS.AES.decrypt(encryptedMessage, key);
+  var key = ($("#PASSKEY").val());
+  var decrypted = CryptoJS.AES.decrypt($("#ENCRYPTED").val(), key);
 
-  $("#plaintext").html(decrypted.toString(CryptoJS.enc.Utf8));
+  $("#DECRYPTED").html(decrypted.toString(CryptoJS.enc.Utf8));
 } // end of DECRYPTING()

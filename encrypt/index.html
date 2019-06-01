@@ -5,7 +5,6 @@
 
 
 <!-- TODOs
-* create encrypt input field and decrypt field
 * finish Javascript encrypt/decrypt functions
 * beautify
 -->
@@ -16,17 +15,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Encrypt/Decrypt</title>
+    <link rel="icon" href="./images/key.ico">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
     <meta name="author" content="Dallin Snell">
     <meta name="description" content="Securely encrypts and decrypts a message right in the user's browser.">
   </head>
   <body>
-    <label>PLAINTEXT</label><input type="text" id="PLAINTEXT" name="message">
-    <button onclick="ENCRYPTING()">Encrypt</button><br>
-    <label>CIPHERTEXT</label>
-    <div id="ciphertext"></div>
+    <input type="password" id="PASSKEY" placeholder="password"><br>
+    <button onclick="ENCRYPTING()">Encrypt</button>
+    <button onclick="DECRYPTING()">Decrypt</button><br>
+    <textarea id="PLAINTEXT" placeholder="message to encrypt"></textarea><br>
+    <label>CIPHERTEXT</label><br>
+    <textarea id="CIPHERTEXT" placeholder="encrypted message" readonly></textarea>
+    
+    <hr>
+    <textarea id="ENCRYPTED" placeholder="message to decrypt"></textarea>
+    <textarea id="DECRYPTED" placeholder="decrypted message"></textarea>
   
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="./scripts/textarea-dynamic.js"></script>
     <script src="./scripts/scripts.js"></script>
   </body>
 </html>
