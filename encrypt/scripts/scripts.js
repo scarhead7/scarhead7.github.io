@@ -15,7 +15,7 @@ function ENCRYPTING()
   // blank out the password
   $("#PASSKEY").val('');
   // blank out plaintext string
-  $('#PLAINTEXT').html('');
+  $('#PLAINTEXT').val('');
 } // end of ENCRYPTING()
 
 function DECRYPTING()
