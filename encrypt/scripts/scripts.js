@@ -13,7 +13,7 @@ function ENCRYPTING()
   // place the encrypted string where the user can see
   $("#CIPHERTEXT").html(encrypted.toString());
   // blank out the password
-  $("#PASSKEY").val("");
+  $("#PASSKEY").val('');
 } // end of ENCRYPTING()
 
 function DECRYPTING()
@@ -26,5 +26,5 @@ function DECRYPTING()
   // place the decrypted string where the user can see
   $("#DECRYPTED").html(decrypted.toString(CryptoJS.enc.Utf8));
   // blank out the password
-  $("#PASSKEY").val("");
+  $("#PASSKEY").val('');
 } // end of DECRYPTING()
