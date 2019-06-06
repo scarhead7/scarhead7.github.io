@@ -33,6 +33,8 @@ function DECRYPTING()
 
 function CLEAR()
 {
+  // removes the password
+  $('#PASSKEY').val('');
   // removes plaintext string (when encrypting)
   $('#PLAINTEXT').val('');
   // removes ciphertext string (when encrypting)
