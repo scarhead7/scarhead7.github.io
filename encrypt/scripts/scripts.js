@@ -30,3 +30,15 @@ function DECRYPTING()
   // blank out the password
   $('#PASSKEY').val('');
 } // end of DECRYPTING()
+
+function CLEAR()
+{
+  // removes plaintext string (when encrypting)
+  $('#PLAINTEXT').val('');
+  // removes ciphertext string (when encrypting)
+  $('#CIPHERTEXT').val('');
+  // removes ciphertext string (when decrypting)
+  $('#ENCRYPTED').val('');
+  // removes plaintext string (when decrypting)
+  $('#DECRYPTED').val('');
+} // end of CLEAR()
