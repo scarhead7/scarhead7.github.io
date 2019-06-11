@@ -23,13 +23,13 @@
   </head>
   <body>
     <label>Password: </label><input type="password" id="PASSKEY" placeholder="password"><br>
-    <button onclick="DECRYPTING()">Decrypt</button><br>
-    <button onclick="CLEAR()">Clear</button><br>
+    <button id="d-button" onclick="DECRYPTING()">Decrypt</button><br>
+    <button id="c-button" onclick="CLEAR()">Clear</button><br>
     <hr>
     <!-- textareas are sized according to textarea-dynamic.js -->
     <!-- decrypt to encrypt textboxes -->
     <textarea id="PLAINTEXT" placeholder="message to encrypt"></textarea>
-    <button onclick="ENCRYPTING()">Encrypt</button>
+    <button id="e-button" onclick="ENCRYPTING()">Encrypt</button>
     <textarea id="CIPHERTEXT" placeholder="encrypted message" readonly></textarea><br>
     <!-- encrypt to decrypt textboxes -->
     <textarea id="ENCRYPTED" placeholder="message to decrypt"></textarea>
