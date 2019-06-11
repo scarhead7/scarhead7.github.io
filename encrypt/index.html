@@ -29,11 +29,11 @@
     <!-- textareas are sized according to textarea-dynamic.js -->
     <!-- decrypt to encrypt textboxes -->
     <textarea id="PLAINTEXT" placeholder="message to encrypt"></textarea>
-    <button id="e-button" onclick="ENCRYPTING()">Encrypt</button>
+    <button id="e-button" onclick="ENCRYPTING($('#PASSKEY').val())">Encrypt</button>
     <textarea id="CIPHERTEXT" placeholder="encrypted message" readonly></textarea><br>
     <!-- encrypt to decrypt textboxes -->
     <textarea id="ENCRYPTED" placeholder="message to decrypt"></textarea>
-    <button id="d-button" onclick="DECRYPTING()">Decrypt</button>
+    <button id="d-button" onclick="DECRYPTING($('#PASSKEY').val())">Decrypt</button>
     <textarea id="DECRYPTED" placeholder="decrypted message"></textarea>
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
