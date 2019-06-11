@@ -27,6 +27,7 @@
     <button onclick="DECRYPTING()">Decrypt</button><br>
     <button onclick="CLEAR()">Clear</button><br>
     <hr>
+    <!-- textareas are sized according to textarea-dynamic.js -->
     <!-- decrypt to encrypt textboxes -->
     <textarea id="PLAINTEXT" placeholder="message to encrypt"></textarea>
     <textarea id="CIPHERTEXT" placeholder="encrypted message" readonly></textarea><br>
@@ -36,6 +37,7 @@
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <!-- resize the textareas -->
     <script src="./scripts/textarea-dynamic.js"></script>
     <script src="./scripts/scripts.js"></script>
   </body>
