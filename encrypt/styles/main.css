@@ -10,6 +10,11 @@ textarea {
   margin: 50px
 }
 
+/* style the placeholder text in the textarea boxes for encrypted messages and decrypted messages */
+textarea[ID="CIPHERTEXT"]::placeholder {
+  text-align: center;
+}
+
 /* encrypt button: raise it up on page
    courtesy: http://jsfiddle.net/5CZRP/
 */
