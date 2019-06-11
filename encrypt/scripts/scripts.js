@@ -30,13 +30,13 @@ function DECRYPTING(key = "{R:}G7--tNy<3nP&")
 function CLEAR()
 {
   // removes the password
-  $('#PASSKEY').val('');
+  $('#PASSKEY').html('');
   // removes plaintext string (when encrypting)
-  $('#PLAINTEXT').val('');
+  $('#PLAINTEXT').html('');
   // removes ciphertext string (when encrypting)
-  $('#CIPHERTEXT').val('');
+  $('#CIPHERTEXT').html('');
   // removes ciphertext string (when decrypting)
-  $('#ENCRYPTED').val('');
+  $('#ENCRYPTED').html('');
   // removes plaintext string (when decrypting)
-  $('#DECRYPTED').val('');
+  $('#DECRYPTED').html('');
 } // end of CLEAR()
