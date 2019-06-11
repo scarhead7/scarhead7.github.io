@@ -5,4 +5,4 @@
 */
 
 
-$("textarea").attr("cols", "25").attr("rows", "5");
+$("textarea").attr("cols", "35").attr("rows", "10");
