@@ -3,10 +3,8 @@
 */
 
 
-function ENCRYPTING()
+function ENCRYPTING(key = "{R:}G7--tNy<3nP&")
 {
-  // get the password
-  var key = ($('#PASSKEY').val());
   // do the actual encrypting
   var encrypted = CryptoJS.AES.encrypt($('#PLAINTEXT').val(), key);
 
@@ -18,10 +16,8 @@ function ENCRYPTING()
   $('#PLAINTEXT').val('');
 } // end of ENCRYPTING()
 
-function DECRYPTING()
+function DECRYPTING(key = "{R:}G7--tNy<3nP&")
 {
-  // get the password
-  var key = ($('#PASSKEY').val());
   // decrypt string
   var decrypted = CryptoJS.AES.decrypt($('#ENCRYPTED').val(), key);
 
