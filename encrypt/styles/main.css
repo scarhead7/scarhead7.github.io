@@ -10,3 +10,8 @@ textarea {
   margin: 25px
 }
 
+/* encrypt button: raise it up on page */
+#e-button {
+  margin: 25px 0px 0px 0px;
+}
+
