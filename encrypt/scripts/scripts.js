@@ -13,7 +13,7 @@ function ENCRYPTING(key = "{R:}G7--tNy<3nP&")
   // blank out the password
   $("#PASSKEY").val('');
   // blank out plaintext string
-  $('#PLAINTEXT').html('');
+  $('#PLAINTEXT').val('');
 } // end of ENCRYPTING()
 
 function DECRYPTING(key = "{R:}G7--tNy<3nP&")
@@ -32,11 +32,11 @@ function CLEAR()
   // removes the password
   $('#PASSKEY').html('');
   // removes plaintext string (when encrypting)
-  $('#PLAINTEXT').html('');
+  $('#PLAINTEXT').val('');
   // removes ciphertext string (when encrypting)
   $('#CIPHERTEXT').html('');
   // removes ciphertext string (when decrypting)
-  $('#ENCRYPTED').html('');
+  $('#ENCRYPTED').val('');
   // removes plaintext string (when decrypting)
   $('#DECRYPTED').html('');
 } // end of CLEAR()
