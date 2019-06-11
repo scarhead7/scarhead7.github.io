@@ -13,7 +13,7 @@ textarea {
 /* encrypt button: raise it up on page
    courtesy: http://jsfiddle.net/5CZRP/
 */
-#e-button {
+#e-button, #d-button {
   position: relative;
   top: -100px;
 }
