@@ -34,7 +34,7 @@
     <!-- encrypt to decrypt textboxes -->
     <textarea id="ENCRYPTED" placeholder="message to decrypt"></textarea>
     <button id="d-button" onclick="DECRYPTING($('#PASSKEY').val())">Decrypt</button>
-    <textarea id="DECRYPTED" placeholder="decrypted message"></textarea>
+    <textarea id="DECRYPTED" placeholder="decrypted message" readonly></textarea>
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
