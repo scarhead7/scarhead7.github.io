@@ -13,7 +13,7 @@ function ENCRYPTING(key = "{R:}G7--tNy<3nP&")
   // blank out the password
   $("#PASSKEY").val('');
   // blank out plaintext string
-  $('#PLAINTEXT').val('');
+  $('#PLAINTEXT').html('');
 } // end of ENCRYPTING()
 
 function DECRYPTING(key = "{R:}G7--tNy<3nP&")
