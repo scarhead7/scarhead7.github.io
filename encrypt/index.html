@@ -23,8 +23,8 @@
   </head>
   <body>
     <label>Password: </label><input type="password" id="PASSKEY" placeholder="password"><br>
-    <button id="d-button" onclick="DECRYPTING()">Decrypt</button><br>
-    <button id="c-button" onclick="CLEAR()">Clear</button><br>
+    <br>
+    <button id="c-button" onclick="CLEAR()">Clear All</button><br>
     <hr>
     <!-- textareas are sized according to textarea-dynamic.js -->
     <!-- decrypt to encrypt textboxes -->
@@ -33,6 +33,7 @@
     <textarea id="CIPHERTEXT" placeholder="encrypted message" readonly></textarea><br>
     <!-- encrypt to decrypt textboxes -->
     <textarea id="ENCRYPTED" placeholder="message to decrypt"></textarea>
+    <button id="d-button" onclick="DECRYPTING()">Decrypt</button>
     <textarea id="DECRYPTED" placeholder="decrypted message"></textarea>
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
