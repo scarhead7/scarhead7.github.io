@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/scarhead
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://scarhead7.github.io
+  * I am scarhead (https://keybase.io/scarhead) on keybase.
+  * I have a public key ASBmfDhKj0p1bCw_nzcPToG992OxrZToxaPMox05Oknzawo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01200f15258277bc97dc2d5557f8b4a32d3f6da030336906e32381a4d14bb5d36d2b0a",
+      "host": "keybase.io",
+      "kid": "0120667c384a8f4a756c2c3f9f370f4e81bdf763b1ad94e8c5a3cca31d393a49f36b0a",
+      "uid": "6d7e24fa3d75cdecee6b88ad17ae3e19",
+      "username": "scarhead"
+    },
+    "merkle_root": {
+      "ctime": 1565721568,
+      "hash": "b8664ba6d6acb5fbb54a97d1719ed69140d2fa7be5bba27f80008df10f6f4affc95e12538cc8db45bfe67c3e8eb1154adbc766115b99685db6efb2cd8230ccf7",
+      "hash_meta": "fd92698ac03fda96a6a405cd3ad69008346d93032b629bed9932df5cdf00f83b",
+      "seqno": 6006920
+    },
+    "service": {
+      "entropy": "SO2B/hG3zi7SrzU5M9GcFDjd",
+      "hostname": "scarhead7.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.3.0"
+  },
+  "ctime": 1565721588,
+  "expire_in": 504576000,
+  "prev": "3ae313386471da12ef88b17181143977c5b51c464e840f44803d9f85b9b92ec0",
+  "seqno": 28,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgZnw4So9KdWwsP583D06Bvfdjsa2U6MWjzKMdOTpJ82sKp3BheWxvYWTESpcCHMQgOuMTOGRx2hLviLFxgRQ5d8W1HEZOhA9EgD2fhbm5LsDEIJ4t55VjYyGZqzXvikyX5uhcCohLDYh3OHtjpQUYykYgAgHCo3NpZ8RAut1cUp3ke2t8i5JHcfWpH+DnC9zXlaOEqzeNTrhwFq/MhJaOJaB90iHVMymBTsufMWpv1p/9v6QNeu4+NTg/CqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINcRMAZADlQ4lYLzOl13uAyWveM9hUyolf2IdjXb8Bhdo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/scarhead
+
+==================================================================
