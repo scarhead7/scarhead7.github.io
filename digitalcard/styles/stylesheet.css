@@ -4,6 +4,10 @@
 */
 
 
+a:link, a:visited {
+    text-decoration: none;
+}
+
 .fullname {
     margin: auto;
     width: 50%;
