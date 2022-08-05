@@ -4,40 +4,42 @@
 */
 
 
+/* prevent styling of links */
 a:link, a:visited {
     text-decoration: none;
 }
 
+/* style name */
 .fullname {
-    margin: auto;
+    margin: auto; 
     width: 50%;
-    //padding: 10px;
     
-    text-align: center;
+    text-align: center; 
     font-family: 'Playfair Display', serif;
 }
 
-
+/* style contact div */
 .contactme {
     margin: auto;
     width: 75%;
     text-align: center;
-    
-    //border: 5px solid green;//debugging
 }
 
+/* standardize contact images */
 .contactme img {
     padding: 10px;
     width: 35px;
     height: auto;
 }
 
+/* style "add to contacts" div */
 .addme {
     margin: auto;
     width: 75%;
     text-align: center;
 }
 
+/* standardize images */
 .addme img {
     padding: 10px;
     width: 35px;
