@@ -1,0 +1,29 @@
+/* Snell, Dallin
+** CREATED 051127 AUG 2022 UPDATED 05 AUG 2022
+** Stylesheet for digital business card page.
+*/
+
+
+.fullname {
+    margin: auto;
+    width: 50%;
+    //padding: 10px;
+    
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.contactme {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+    
+    //border: 5px solid green;//debugging
+}
+
+.contactme img {
+    padding: 10px;
+    width: 35px;
+    height: auto;
+}
