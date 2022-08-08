@@ -1,8 +1,13 @@
 /* Snell, Dallin
-** CREATED 051127 AUG 2022 UPDATED 05 AUG 2022
+** CREATED 051127 AUG 2022 UPDATED 08 AUG 2022
 ** Stylesheet for digital business card page.
 */
 
+
+html {
+    background-color: #F0F0FF;
+    color: #0A0F18;
+}
 
 /* prevent styling of links */
 a:link, a:visited {
